@@ -1,0 +1,34 @@
+<?php
+define("LAN_400", "Imágenes actuales");
+define("LAN_401", "Editar Imagen");
+define("LAN_402", "Añadir Imagen");
+define("LAN_403", "ID");
+define("LAN_404", "Título");
+define("LAN_405", "Imagen");
+define("LAN_406", "Ver");
+define("LAN_407", "Añadida por");
+define("LAN_408", "Fecha");
+define("LAN_409", "Comentarios");
+define("LAN_410", "Orden");
+define("LAN_411", "Opciones");
+define("LAN_412", "Eliminar");
+define("LAN_413", "Vistas");
+define("LAN_414", "Guardar Imagen");
+define("LAN_415", "Cancelar");
+define("LAN_416", "orden actual:");
+define("LAN_417", "dejar en blando para colocar en último lugar");
+define("LAN_418", "Cargando Imagen...");
+define("LAN_419", "La imagen en miniatura va a estar en escala de %uw x %uh pixeles");
+define("LAN_420", "Error en Imagen");
+define("LAN_421", "Error");
+define("LAN_422", "El título de la Imagen ya está en uso.");
+define("LAN_423", "La imagen debe ser menor de %u bytes.");
+define("LAN_424", "Fichero de Imagen inválido.");
+define("LAN_425", "La imagen debe estar en formato JPEG.");
+define("LAN_426", "La imagen debe ser menor de %uw x %uh pixeles.");
+define("LAN_427", "Volver a Admin. de Imágenes");
+define("LAN_428", "Volver al Panel de Admin.");
+define("LAN_429", "No se han definido Imágenes.");
+define("LAN_430", "Nada");
+define("LAN_431", "Cerrar Galería");
+?>

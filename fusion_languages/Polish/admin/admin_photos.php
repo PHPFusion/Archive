@@ -1,0 +1,34 @@
+<?php
+define("LAN_400", "Obecne zdjêcia");
+define("LAN_401", "Edytuj zdjêcie");
+define("LAN_402", "Dodaj zdjêcie");
+define("LAN_403", "ID");
+define("LAN_404", "Tytu³");
+define("LAN_405", "Zdjêcie");
+define("LAN_406", "Miniatura");
+define("LAN_407", "Dodane przez");
+define("LAN_408", "Data");
+define("LAN_409", "Komentarze");
+define("LAN_410", "Sortowanie");
+define("LAN_411", "Opcje");
+define("LAN_412", "Kasuj");
+define("LAN_413", "Ods³on");
+define("LAN_414", "Zapisz");
+define("LAN_415", "Anuluj");
+define("LAN_416", "obecne sortowanie:");
+define("LAN_417", "zosta puste by ustawiæ album na koñcu");
+define("LAN_418", "£adujê grafikê...");
+define("LAN_419", "Zdjêcia bêd± rozmiaru %uw x %uh pikseli");
+define("LAN_420", "B£±D");
+define("LAN_421", "B£±D");
+define("LAN_422", "Tytu³ zajêty.");
+define("LAN_423", "Zdjêcie musi mieæ rozmiar mniejszy ni¿ %u bajtów.");
+define("LAN_424", "Z³e rozszerzenie pliku.");
+define("LAN_425", "Zdjêcie musi mieæ rozszerzenie JPG.");
+define("LAN_426", "Zdjêcie musi mieæ mniejszy rozmiar ni¿ %uw x %uh pikseli.");
+define("LAN_427", "Powrót do panelu zdjêæ");
+define("LAN_428", "Powrót do panelu admina");
+define("LAN_429", "Brak zdjêæ.");
+define("LAN_430", "Brak");
+define("LAN_431", "Zamknij album");
+?>

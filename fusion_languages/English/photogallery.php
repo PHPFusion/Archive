@@ -1,0 +1,33 @@
+<?php
+define("LAN_400", "Photo Albums");
+define("LAN_401", "Empty Album");
+define("LAN_402", "Latest: ");
+define("LAN_403", " Picture");
+define("LAN_404", " Pictures");
+define("LAN_405", "Loading Image...");
+define("LAN_406", "[Updated]");
+define("LAN_407", "No Photo Albums defined");
+define("LAN_408", "Album: ");
+define("LAN_409", "No of images: ");
+define("LAN_410", "Latest image added on ");
+define("LAN_411", " by ");
+define("LAN_412", "None");
+define("LAN_413", "Album Contents");
+define("LAN_414", "Views: ");
+define("LAN_415", "No Comments");
+define("LAN_416", "Comment");
+define("LAN_417", "Comments");
+define("LAN_418", "No images have been added to this album.");
+define("LAN_419", "Photo: ");
+define("LAN_420", "Size: ");
+define("LAN_421", " pixels ");
+define("LAN_422", "Image added by ");
+define("LAN_423", " on ");
+define("LAN_424", "Image has been viewed ");
+define("LAN_425", " times");
+define("LAN_426", "Return to Album List");
+define("LAN_427", "Return to Album Gallery");
+define("LAN_428", "Database Error");
+define("LAN_429", "< Prev");
+define("LAN_430", "Next >");
+?>

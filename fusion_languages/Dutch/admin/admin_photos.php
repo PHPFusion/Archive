@@ -1,0 +1,34 @@
+<?php
+define("LAN_400", "Huidige Foto's");
+define("LAN_401", "Wijzig Foto");
+define("LAN_402", "Voeg Foto Toe");
+define("LAN_403", "ID");
+define("LAN_404", "Titel");
+define("LAN_405", "Afbeelding");
+define("LAN_406", "Thumb");
+define("LAN_407", "Toegevoegd door");
+define("LAN_408", "Datum");
+define("LAN_409", "Reacties");
+define("LAN_410", "Volgorde");
+define("LAN_411", "Opties");
+define("LAN_412", "Verwijder");
+define("LAN_413", "Views");
+define("LAN_414", "Sla Foto Op");
+define("LAN_415", "Annuleer");
+define("LAN_416", "huidige volgorde:");
+define("LAN_417", "laat leeg om achteraan toe te voegen");
+define("LAN_418", "Afbeelding aan het laden...");
+define("LAN_419", "Thumbnail wordt geschaald naar %uw x %uh pixels");
+define("LAN_420", "Foto Fout");
+define("LAN_421", "Fout");
+define("LAN_422", "Foto Titel is al in gebruik.");
+define("LAN_423", "Afbeelding moet kleiner zijn dan %u Bytes.");
+define("LAN_424", "Ongeldig Afbeeldingsbestand.");
+define("LAN_425", "Afbeelding moet een JPEG zijn.");
+define("LAN_426", "Afbeelding moet kleiner zijn dan %uw x %uh pixels.");
+define("LAN_427", "Terug naar Foto Admin");
+define("LAN_428", "Terug naar Admin Index");
+define("LAN_429", "Geen Fotos toegevoegd.");
+define("LAN_430", "Geen");
+define("LAN_431", "Sluit Album");
+?>

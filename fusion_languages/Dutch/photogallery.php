@@ -1,0 +1,33 @@
+<?php
+define("LAN_400", "Foto Albums");
+define("LAN_401", "Leeg Album");
+define("LAN_402", "Laatsten: ");
+define("LAN_403", " Foto");
+define("LAN_404", " Foto's");
+define("LAN_405", "Loading Image...");
+define("LAN_406", "[Geupdated]");
+define("LAN_407", "Geen albums gedefinieerd");
+define("LAN_408", "Album: ");
+define("LAN_409", "Aantal foto's: ");
+define("LAN_410", "Laatste foto toegevoegd op ");
+define("LAN_411", " door ");
+define("LAN_412", "Geen");
+define("LAN_413", "Album Inhoud");
+define("LAN_414", "Views: ");
+define("LAN_415", "Geen reacties");
+define("LAN_416", "Reactie");
+define("LAN_417", "Reacties");
+define("LAN_418", "Er zijn nog geen foto's in dit album geplaatst.");
+define("LAN_419", "Foto: ");
+define("LAN_420", "Grootte: ");
+define("LAN_421", " pixels ");
+define("LAN_422", "Foto toegevoegd door ");
+define("LAN_423", " op ");
+define("LAN_424", "Foto is ");
+define("LAN_425", " views");
+define("LAN_426", "Terug naar Album Lijst");
+define("LAN_427", "Terug naar Album Gallerij");
+define("LAN_428", "Database Fout");
+define("LAN_429", "< Vorige");
+define("LAN_430", "Volgende >");
+?>

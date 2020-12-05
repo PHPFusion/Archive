@@ -1,0 +1,35 @@
+<?php
+define("LAN_400", "Istniej±ce Albumy");
+define("LAN_401", "Usuñ");
+define("LAN_402", "Edytuj");
+define("LAN_403", "Dodaj Album");
+define("LAN_404", "ID");
+define("LAN_405", "Nazwa");
+define("LAN_406", "Miniatura");
+define("LAN_407", "Zdjêcia");
+define("LAN_408", "Kolejno¶æ");
+define("LAN_409", "Opcje");
+define("LAN_410", "Info");
+define("LAN_411", "Obraz");
+define("LAN_412", "Usuñ");
+define("LAN_413", "Enter");
+define("LAN_414", "Zapisz Album");
+define("LAN_415", "Anuluj");
+define("LAN_416", "Obecna kolejno¶æ:");
+define("LAN_417", "zostaw puste, aby ustawiæ album jako ostatni");
+define("LAN_418", "Trwa ³adowanie obrazu...");
+define("LAN_419", "Zdjêcie zostanie zeskalowane do rozmiaru %uw x %uh pikseli");
+define("LAN_420", "B³±d Fotogalerii");
+define("LAN_421", "B³±d");
+define("LAN_422", "Album nie mo¿e zostaæ usuniêty, poniewa¿");
+define("LAN_423", "zawiera on zdjêcia.");
+define("LAN_424", "Ta nazwa albumu jest ju¿ u¿ywana.");
+define("LAN_425", "Zdjêcie musi byæ mniejsze ni¿ %u bajtów.");
+define("LAN_426", "Niew³a¶ciwy plik obrazu.");
+define("LAN_427", "Obraz musi byæ w formacie JPEG.");
+define("LAN_428", "Zdjêcie musi byæ mniejsze ni¿ %uw x %uh pikseli.");
+define("LAN_429", "Powrót do Zarz±dzania Fotogaleri±");
+define("LAN_430", "Powrót do Panelu Admina");
+define("LAN_431", "Brak Albumów.");
+define("LAN_432", "Brak");
+?>

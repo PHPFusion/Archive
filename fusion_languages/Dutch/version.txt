@@ -1,0 +1,17 @@
++---------------------------------------+
+|PHP-Fusion Dutch Translation           |
+|version 3.2004.12.14                   |
++---------------------------------------+
+|Translation made by:                   |
+|Vertaling gemaakt door:                |
+|                                       |
+|Ronald Iwema (Scor3p)                  |
+|Email: sxqsxqsxq@hotmail.com           |
++---------------------------------------+
+|Opmerkingen, verbeteringen, suggesties |
+|of wat dan ook, wees vrij te emailen   |
++---------------------------------------+
+|Credits:                               |
+|                                       |
+|Kalamazoo (controle, verbeteringen)    |
++---------------------------------------+

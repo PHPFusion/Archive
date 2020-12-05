@@ -1,0 +1,33 @@
+<?php
+define("LAN_400", "Fotoalbums");
+define("LAN_401", "Tomt album");
+define("LAN_402", "Seneste: ");
+define("LAN_403", " Billede");
+define("LAN_404", " Billeder");
+define("LAN_405", "Henter billede...");
+define("LAN_406", "[Opdateret]");
+define("LAN_407", "Der er ikke oprettet albums");
+define("LAN_408", "Album: ");
+define("LAN_409", "Antal billeder: ");
+define("LAN_410", "Sidste billede tilføjet d. ");
+define("LAN_411", " af ");
+define("LAN_412", "Ingen");
+define("LAN_413", "Albumindhold");
+define("LAN_414", "Fremvisninger: ");
+define("LAN_415", "Ingen kommentarer");
+define("LAN_416", "Kommentar");
+define("LAN_417", "Kommentarer");
+define("LAN_418", "Der er ikke tilføjet billeder til dette album.");
+define("LAN_419", "Foto: ");
+define("LAN_420", "Størrelse: ");
+define("LAN_421", " pixels ");
+define("LAN_422", "Billede tilføjet af ");
+define("LAN_423", " d. ");
+define("LAN_424", "Billedet er blevet set ");
+define("LAN_425", " gange");
+define("LAN_426", "Vend tilbage til albumfortegnelse");
+define("LAN_427", "Vend tilbage til galleriet");
+define("LAN_428", "Databasefejl");
+define("LAN_429", "< Foregående");
+define("LAN_430", "Næste >");
+?>

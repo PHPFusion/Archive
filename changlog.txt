@@ -1,0 +1,121 @@
+21.12.2004
+· Created Blacklist Management Admin panel to enable administrators to block ip or email addresses.
+· Created admin_blacklist language file.
+· Created blacklist database table.
+· Added 'Blacklist' phrase (LAN_224) to admin_main.php language file.
+· Added 'Your email address or email domain is blacklisted.' phrase (LAN_411) to register.php language file.
+
+22.12.2004
+· Added ip check to fusion_core.php to check if users full or partial ip is blacklisted.
+· Added 'Your IP address is currently blacklisted.' phrase (LAN_00B) to global.php language file.
+
+23.12.2004
+· changed user_mod column to user_level in users database table.
+· added user_rights (text) column to users database table.
+· added user_groups (text) column to users database table.
+
+24.12.2004
+· Dropped iMOD & iSUPERADMIN user levels.
+· Changed value of iMEMBER TO 250 & iADMIN to 251.
+
+26.12.2004
+· Main Administrators (user_id 1) can choose which admin panels other administrators can access.
+
+01.01.2005
+· Added 'User Groups' phrase (LAN_225) to admin_main.php language file.
+· Created User Group admin panel.
+· Created admin_user_groups language file.
+· Added new functions to fusion_core.php:
+checkrights() - Checks user is an Admin and has rights to access the specified admin panel.
+checkgroup() - Checks if user has access to the specified access level or user group.
+getusergroups() - Compiles array of access levels & user groups.
+getgroupname() - Displays the name of the specified access level or user group.
+
+02.01.2005
+· getmodlevel() function replaced by getuserlevel() function in fusion_core.php.
+
+05.01.2005
+· Changed phrase 'Mod Level' to 'User Type' (LAN_403) in admin/admin_members.php language file.
+· Altered LAN_453 & LAN_455 in admin/admin_members.php language file to prevent E_NOTICE errors.
+
+07.01.2005
+· Altered LAN_482 & LAN_484 in members-profile.php language file to prevent E_NOTICE errors.
+· Added Forum Moderator selection lists to forums.php admin panel.
+
+08.01.2005
+· Changed Moderator definition from USER2 to USERF1 in global.php language file.
+· Moved Administrator definition from USER3 to USER2 in global.php language file.
+· Dropped USER4 (Super Administrator) definition from in global.php language file.
+
+09.01.2005
+· Altered LAN_401 & LAN_404 in shoutboxhelp.php language file to prevent E_NOTICE errors.
+· Admin Panels now sorted alphabetically in all languages.
+
+11.01.2005
+· Moved 'Save Forum' phrase from LAN_465 TO LAN_466 in admin_forums.php language file.
+· Added 'Forum Postability:' phrase (LAN_465) to admin_forums.php language file.
+· Added Forum Postability selection box to forums admin panel.
+
+12.01.2005
+· Fixed code in Panel admin to prevent accidental deactivation or deletion of User Login/Info panel.
+· Successfully tested v5 to v5.01 upgrade script.
+
+13.01.2005
+- Created new theme entitled Echelon.
+
+15.01.2005
+· Added Image Selection box to news.php & articles.php admin panels.
+· Added Color Selection box to news.php & articles.php admin panels.
+· Added '- Select Color =' phrase (LAN_420) to admin_news-articles.php language file.
+· Added '- Select Image =' phrase (LAN_421) to admin_news-articles.php language file.
+· Added Hour & Minutes options to News Start Date & End Date.
+
+16.01.2005
+· Added new definitions 'FUSION_IMAGES_A' & 'FUSION_IMAGES_N' to store paths to article & news images folders to fusion_core.php.
+· Improved image upload admin panel to support image uploading to main images, article images & news images folders.
+· Moved 'You can only upload images in gif, jpg or png format' phrase from LAN_422 TO LAN_425 in admin_image_uploads.php language file.
+· Moved 'Image Uploaded' phrase from LAN_423 TO LAN_426 in admin_image_uploads.php language file.
+· Added 'Main Images' phrase (LAN_422) to admin_image_uploads.php language file.
+· Added 'Article Images' phrase (LAN_423) to admin_image_uploads.php language file.
+· Added 'News Images' phrase (LAN_424) to admin_image_uploads.php language file.
+· Added 'This folder is empty' phrase (LAN_463) to admin_image_uploads.php language file.
+
+21.01.05
+· Added Open link in new window option to site links admin panel.
+· Moved 'Save Link' phrase from LAN_428 TO LAN_429 in admin_sitelinks.php language file.
+· Added 'Open link in new window' phrase (LAN_428) to admin_sitelinks.php language file.
+
+22.01.2005
+· Fixed shoutbox display issue with Firefox/Mozilla browsers.
+· Moved shoutbox_archive.php & shoutboxhelp.php files to shoutbox_panel folder.
+
+24.01.2005
+· Altered LAN_407, LAN_408 & LAN_450 in register.php language file to prevent E_NOTICE errors.
+
+01.02.2005
+· New unified sendemail function replaces both sendemail & sendemailfrom functions.
+
+05.02.2005
+· Completely rewrote the Latest Active Forum Threads center panel.
+· Changed inf_version from smallint(5) to varchar(10) in infusions database table.
+· Altered display of author email and web links in Infusion Admin.
+· Changed message_subject varchar(100) to varchar(200) in messages database table.
+
+06.02.2005
+· Return to Thread link in postreply.php & postedit.php now return you to the last page/post of the thread.
+
+08.02.2005
+· Added Visibility option to news admin panel.
+· Added news_visibility tinyint(3) column to news database table.
+
+11.02.2005
+· User IP now displayed in user profiles in members admin panel.
+
+12.02.2005
+· Reintegrated iSUPERADMIN level (252) to identify main admin or site founder.
+
+14.02.2005
+· Added new definition "FUSION_SELF" to fusion_core.php, replaces use of $PHP_SELF
+
+19.02.2005
+· Custom page content is now store in the custom_pages database table.

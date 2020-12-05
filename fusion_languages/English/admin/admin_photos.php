@@ -1,0 +1,34 @@
+<?php
+define("LAN_400", "Current Photos");
+define("LAN_401", "Edit Photo");
+define("LAN_402", "Add Photo");
+define("LAN_403", "ID");
+define("LAN_404", "Title");
+define("LAN_405", "Image");
+define("LAN_406", "Thumb");
+define("LAN_407", "Added By");
+define("LAN_408", "Date");
+define("LAN_409", "Comments");
+define("LAN_410", "Order");
+define("LAN_411", "Options");
+define("LAN_412", "Delete");
+define("LAN_413", "Views");
+define("LAN_414", "Save Photo");
+define("LAN_415", "Cancel");
+define("LAN_416", "current order:");
+define("LAN_417", "leave blank to set last in order");
+define("LAN_418", "Loading Image...");
+define("LAN_419", "Thumbnail will be scaled to %uw x %uh pixels");
+define("LAN_420", "Photo Error");
+define("LAN_421", "Error");
+define("LAN_422", "Photo Title already in use.");
+define("LAN_423", "Image must be less than %u bytes.");
+define("LAN_424", "Invalid Image File.");
+define("LAN_425", "Image must be a JPEG Image File.");
+define("LAN_426", "Image must be less than %uw x %uh pixels.");
+define("LAN_427", "Return to Photo Admin");
+define("LAN_428", "Return to Admin Index");
+define("LAN_429", "No Photos defined.");
+define("LAN_430", "None");
+define("LAN_431", "Close Album");
+?>

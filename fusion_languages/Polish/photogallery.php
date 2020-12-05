@@ -1,0 +1,33 @@
+<?php
+define("LAN_400", "Fotogaleria");
+define("LAN_401", "Pusty Album");
+define("LAN_402", "Najnowszy: ");
+define("LAN_403", " Zdjêcie");
+define("LAN_404", " Zdjêcia");
+define("LAN_405", "Trwa ³adowanie...");
+define("LAN_406", "[Uaktualniony]");
+define("LAN_407", "Brak Albumów");
+define("LAN_408", "Album: ");
+define("LAN_409", "No of images: ");
+define("LAN_410", "Ostatnie zdjêcie dodano ");
+define("LAN_411", " przez ");
+define("LAN_412", "Brak");
+define("LAN_413", "Zawarto¶æ Albumów");
+define("LAN_414", "Wy¶wietleñ: ");
+define("LAN_415", "Brak komentarzy");
+define("LAN_416", "Komentarz");
+define("LAN_417", "KOmentarze");
+define("LAN_418", "Brak zdjêæ w albumie.");
+define("LAN_419", "Zdjêcie: ");
+define("LAN_420", "Rozmiar: ");
+define("LAN_421", " x ");
+define("LAN_422", "Dodany przez ");
+define("LAN_423", " dnia ");
+define("LAN_424", "To zdjêcie zosta³o wy¶wietlone ");
+define("LAN_425", " razy");
+define("LAN_426", "Powrót do Listy Albumów");
+define("LAN_427", "Powrót do Fotogalerii");
+define("LAN_428", "B³±d bazy danych");
+define("LAN_429", "< Poprzednie");
+define("LAN_430", "Nastêpne >");
+?>

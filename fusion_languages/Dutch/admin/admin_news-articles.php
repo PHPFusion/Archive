@@ -1,0 +1,70 @@
+<?php
+// Nieuws
+define("LAN_400", "Nieuws wijzigen");
+define("LAN_401", "Nieuws bijgewerkt");
+define("LAN_402", "Terug naar Nieuws-beheer");
+define("LAN_403", "Terug naar Beheerder Paneel");
+define("LAN_404", "Nieuws toevoegen");
+define("LAN_405", "Nieuws toegevoegd");
+define("LAN_406", "Nieuws verwijderen");
+define("LAN_407", "Nieuws verwijderd");
+define("LAN_408", "Bestaand nieuws");
+define("LAN_409", "Wijzigen");
+define("LAN_410", "Verwijderen");
+define("LAN_411", "Onderwerp:");
+define("LAN_412", "Nieuws:");
+define("LAN_413", "Uitgebreid nieuws:");
+define("LAN_414", "Datum start:");
+define("LAN_415", "Datum einde:");
+define("LAN_416", "(Optioneel)");
+define("LAN_417", " Automatische \"Line-Breaks\"");
+define("LAN_418", "Nieuws bekijken");
+define("LAN_419", "Nieuws opslaan");
+define("LAN_420", "- Selecteer een kleur -");
+define("LAN_421", "- Selecteer een afbeelding -");
+define("LAN_422", "Zichtbaar:");
+// Artikel-categorieën
+define("LAN_450", "Artikelen-categorie");
+define("LAN_451", "Artikelen-categorie kan niet verwijderd worden");
+define("LAN_452", "Er staan nog artikelen in deze categorie");
+define("LAN_453", "Terug naar Artikel-categorieën-beheer");
+define("LAN_454", "Artikelen-categorie verwijderd");
+define("LAN_455", "Artikelen-categorie wijzigen");
+define("LAN_456", "Artikelen-categorie toevoegen");
+define("LAN_457", "Naam categorie:");
+define("LAN_458", "Omschrijving categorie:");
+define("LAN_459", "Categorie opslaan");
+define("LAN_460", "Artikel-categorieën");
+define("LAN_461", "Categorie [Klik om te wijzigen]");
+define("LAN_462", "Opties");
+define("LAN_463", "Verwijderen");
+define("LAN_464", "Er zijn geen artikel-categorieën gedefinieerd");
+// Artikelen
+define("LAN_500", "Artikel wijzigen");
+define("LAN_501", "Artikel begewerkt");
+define("LAN_502", "Terug naar Artikelen-beheer");
+define("LAN_503", "Terug naar Beheerder Paneel");
+define("LAN_504", "Artikel toevoegen");
+define("LAN_505", "Artikel toegevoegd");
+define("LAN_506", "Artikel verwijderen");
+define("LAN_507", "Artikel verwijderd");
+define("LAN_508", "Bestaande artikelen");
+define("LAN_509", "Wijzigen");
+define("LAN_510", "Verwijderen");
+define("LAN_511", "Categorie:");
+define("LAN_512", "Onderwerp:");
+define("LAN_513", "Snippet:");
+define("LAN_514", "Artikel:");
+define("LAN_515", " Automatische \"Line-Breaks\"");
+define("LAN_516", "Artikel bekijken ");
+define("LAN_517", "Artikel opslaan");
+define("LAN_518", "Artikelen");
+define("LAN_519", "Er zijn geen artikel-categorieën gedefinieerd");
+define("LAN_520", "Definieer tenminste één categorie om artikelen te kunnen plaaten");
+define("LAN_521", "Klik hier");
+define("LAN_522", " om naar artikel-categorieën te gaan");
+// Fout-popup/Waarschuwingsberichten
+define("LAN_550", "Vul een onderwerp in");
+define("LAN_551", "Dit nieuws verwijderen?");
+define("LAN_552", "Dit artikel verwijderen?");
+?>

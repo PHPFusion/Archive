@@ -1,0 +1,5 @@
+Work on the Discussion Forum is progressing very well. I have completed the code adjustments and so far everything is working as expected.  Here are the details (Update Log extract):
+
+<b><font color="red">· </font></b>Added 'lastvisited' cookie value to calculate number of new Forum Posts/Threads since the User's last visit. The cookie value is taken from the User's database entry (if they are registered). This cookie expires after one hour, whilst the User's lastvisit database value is updated whenever they visit the Forum.
+
+<b><font color="red">· </font></b>Created display icons to signify New Posts/Threads in the Forum. On the Forum index page Grey signifies No New Posts and yellow signifies there are New Posts. On the View Threads page Threads with a Grey folder indicate No New Posts whilst Yellow indicates there are New Posts. A Red folder indicates there are 20 or more new posts in the Thread (Hot Thread).

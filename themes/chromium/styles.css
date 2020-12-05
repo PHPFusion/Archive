@@ -1,0 +1,75 @@
+.alt {color: #ffcc44;}
+.altleft {font-size: 8pt; color: #ffcc44; background-color: #4c4c4c;
+	border-width: 1px 0px 1px 1px; border-color: #777777; border-style: solid;}
+.altmid {font-size: 8pt; color: #ffcc44; background-color: #4c4c4c;
+	border-width: 1px 0px 1px 0px; border-color: #777777; border-style: solid;}
+.altright {font-size: 8pt; color: #ffcc44; background-color: #4c4c4c;
+	border-width: 1px 1px 1px 0px;border-color: #777777; border-style: solid;}
+.button {font-family: Tahoma, Verdana, sans-serif; font-size: 8pt; color: #cccccc;
+	background-color: #5b6574; border: 1px #000000 solid; margin-top: 2px;
+	background-image: url(images/button.gif); background-repeat: repeat-x;}
+.body {font-size: 8pt; color: #bbbbbb; background-color: #555555; padding: 4px 4px 4px 4px;}
+.bodyborder {background-color: #666666; border: 1px #444444 solid;};
+.border {border: 1px #000000 solid;};
+.header {font-size: 7pt; font-weight: normal; color: #888888; margin: 10px 10px 0px 10px;}
+.title {font-size: 8pt; color: #ffffff; background-color: #5b6574;
+	background-image: url(images/titlebg.gif); background-repeat: repeat-x;
+	border-width: 0px 0px 1px 0px; border-color: #000000; border-style: solid;
+	padding: 2px 4px 4px 4px;}
+.tablebar {font-size: 4pt; background-color: #666666;
+	background-image: url(images/titlebg.gif); background-repeat: repeat-x;
+	border-width: 1px 0px 1px 0px; border-color: #000000; border-style: solid;}
+.sideborder {background-color: #555555; border-width: 0px 1px 1px 1px; border-color: #333333; border-style: solid;};
+.sidetitle {font-size: 8pt; color: #ffffff; background-color: #5b6574;
+	background-image: url(images/titlebg.gif); background-repeat: repeat-x;
+	border-width: 1px 0px 1px 0px; border-color: #000000; border-style: solid;
+	padding: 2px 4px 4px 4px;}
+.sidebody {font-size: 7pt; color: #bbbbbb; background-color: #555555; padding: 4px 4px 4px 4px;}
+.newstitle {font-size: 8pt; color: #ffffff; background-color: #5b6574;
+	background-image: url(images/newstitlebg.gif); background-repeat: repeat-x;
+	border-width: 0px 0px 1px 0px; border-color: #000000; border-style: solid;
+	padding: 2px 4px 4px 4px;}
+.newssubtitle {font-size: 7pt; font-weight: normal; color: #ffffff;}
+.newsbody {font-size: 8pt; color: #bbbbbb; background-color: #555555; padding: 4px 4px 4px 4px;}
+.newsfoot {font-size: 7pt; color: #ffffff; background-color: #5b6574;
+	background-image: url(images/footbg.gif); background-repeat: repeat-x;
+	border-width: 1px 0px 0px 0px; border-color: #000000; border-style: solid;
+	padding: 4px 4px 4px 4px;}
+.nextprev {color: #ffffff; background-color: #5b6574;}
+.forum {font-size: 8pt; padding: 4px 2px 4px 2px;}
+.forumh1 {font-size: 8pt; padding: 4px 4px 5px 4px;
+	border-width: 1px 0px 1px 0px; border-color: #777777; border-style: solid;}
+.forumh2 {font-size: 8pt; padding: 4px 4px 5px 4px;
+	border-width: 1px 0px 1px 1px; border-color: #777777; border-style: solid;}
+.forumc1 {font-size: 8pt; color: #ffbb22; background-color: #4a4a4a; padding: 4px 4px 5px 4px;
+	border-width: 0px 0px 1px 0px; border-color: #777777; border-style: solid;}
+.forumc2 {font-size: 8pt; color: #ffbb22; background-color: #4a4a4a; padding: 4px 4px 5px 4px;
+	border-width: 0px 0px 1px 1px; border-color: #777777; border-style: solid;}
+.forumf1 {font-size: 8pt; padding: 4px 4px 5px 4px;
+	border-width: 0px 0px 1px 0px; border-color: #777777; border-style: solid;}
+.forumf2 {font-size: 8pt; padding: 4px 4px 5px 4px;
+	border-width: 0px 0px 1px 1px; border-color: #777777; border-style: solid;}
+.forumt1 {font-size: 8pt; background-color: #4a4a4a; padding: 4px 4px 5px 4px;
+	border-width: 1px 0px 1px 0px; border-color: #777777; border-style: solid;}
+.forumt2 {font-size: 8pt; background-color: #4a4a4a; padding: 4px 4px 5px 4px;
+	border-width: 1px 0px 1px 1px; border-color: #777777; border-style: solid;}
+.poll {font-size: 7pt;}
+.shoutboxname {font-size: 7pt; color: #ffbb22;}
+.shoutbox {font-size: 7pt; color: #bbbbbb;}
+.shoutboxdate {font-family: Verdana, Tahoma, Arial, sans-serif; font-size: 8px;
+	color: #aaaaaa;	text-align: right;}
+.small {font-size: 7pt; font-weight: normal;}
+.small2 {font-size: 7pt; font-weight: normal; color: #ffcc44;}
+.textbox {font-family: Tahoma, Verdana, sans-serif; font-size: 8pt;
+	color: #cccccc; background-color: #666666; border: 1px #000000 solid;}
+a {color: #9999e9; text-decoration: none;}
+a:hover {color: #9999e9; text-decoration: underline;}
+a.x {color: #ffcc44; text-decoration: none;}
+a:hover.x {color: #ffcc44; text-decoration: underline;}
+body {color: #bbbbbb; background-color: #888888; scrollbar-face-color: #5b6574; scrollbar-shadow-color: #3d4756;
+	scrollbar-highlight-color: #838d9c; scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000; scrollbar-track-color: #555555;
+	scrollbar-arrow-color: #dddddd;}
+form {margin: 0px 0px 0px 0px;}
+hr {color: #777777; height: 1px; border-style: none;}
+td {font-family: Verdana, Tahoma, Arial, sans-serif; font-size: 8pt;}

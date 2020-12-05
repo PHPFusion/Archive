@@ -1,0 +1,10 @@
+As some of you may have noticed a brief moment of downtime, don't worry, everything is still intact. I am currently working on improving various bits of Power-Portal, whilst at the same time planning the release of MyCMS v1.3. The latest release will add Private Messages and Members List (as seen here).
+
+As I said earlier this month, I am committed to continuously improving MyCMS at a steady pace. Power-Portal is my own personal version of MyCMS and will not be made publicly available. It's not a major issue however, since MyCMS will probably have most if not all of the features of Power-Portal integrated at some point.
+
+One final note:
+
+<span class="small"><div align="center">Powered by MyCMS Titanium Edition v1.2
+copyright © 2003 <a href="http://www.digitaldominion.co.uk/" target="_blank">digital dominion</a>, all rights reserved.</div></span>
+
+This notice located in the footer of MyCMS should NOT be altered, if I feel that ownership of MY work has been wrongfully claimed as anyone elses, I will cease development of MyCMS. Copyright is there for a reason, please respect it.

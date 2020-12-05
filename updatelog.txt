@@ -1,0 +1,123 @@
+PHP-Fusion 1.31 Update Log
+
+30.07.2003
+· Complete rewrite of the News system. In previous versions, news was stored in
+text files, whilst the news info such as Subject, Date and Author was stored
+in the database. Now the entire news item is stored in the database, this has
+been done to allow anew feature. Your News article can be shown on one page,
+with an extended version on another page. This feature does not have to be
+used, but it provides a way of keeping your main news page uncluttered.
+· Database Articles changes: added reads (smallint(6)) column to log how many
+people have read it.
+· Database News changes: added news (text), extendednews
+(text) and reads (smallint(6)) columns.
+
+03.08.2003
+· Changed the theme template to a more minimalistic style for faster page loading.
+· Added Total Members and Newest Member info to Users Online box.
+· Added new layer of code to fix annoying multiple users online bug.
+
+05.08.2003
+· Changed site layout to fixed-width optimised for resolutions of 1024x768 and above.
+· Updated the Upgrade script to update myCMS 1.3 to PHP-Fusion 1.31.
+
+06.08.2003
+· Reverted back to non fixed width site layout.
+· Added Theme option to Admin Settings page to enable easy theme switching.
+· Database Settings changes: added theme (varchar(32)) column.
+
+07.08.2003
+· Altered subheaders to support new switchable themes.
+· Optimised Style Sheet.
+· Added Hottest Threads and Latest articles to sidebar.
+
+08.08.2003
+· Added two new settings; Allow Visitor Shoutbox Post (Yes or No) and Allow
+Visitor Comments (Yes or No). The latter of these two new settings affect
+both News & Articles.
+· Database settings changes: added visitorshoutbox (varchar(3)) and
+visitorcomments (varchar(3))
+· Added 2 new sidebar elements: Hottest Threads shows the 5 most popular
+Forum Threads with post counts shown in brackets. Latest Articles shows
+the 5 most recent Articles, these include new and updated Articles.
+· Removed Google Websearch from sidebar.
+· Default theme Aquarium completed.
+
+09.08.2003
+· Moved topbar displaying user related info into right-hand sidebar, this
+element appears on the left in both the Forum and Admin Panel.
+
+10.08.2003
+· Ported Chromium theme from MyCMS v1.3.
+
+14.08.2003
+· Moved user info box above Members online box in forum and admin panel.
+· Added Site Banner option to Settings page, enables you to set the path to
+your banner image, e.g. images/banner.gif.
+· Database settings changes: added sitebanner (varchar(255)).
+
+17.08.2003
+· Fixed minor error in the install script, siteemail & sitebanner settings were mixed up.
+· Changed database connection code to support some odd PHP/MySQL setups.
+· Updated shoutboxhelp.php to fix smiley images.
+
+18.08.2003
+· Added web column to users database setup in install script.
+
+19.08.2003
+· Fixed Shoutbox post routine to stop it picking up Private Message Posts.
+· Fixed Private Message Subjects.
+
+PHP-Fusion v1.32
+
+20.08.2003
+· Changed download code, removed JavaScript method, download is now controlled
+by the site header.
+· Added referal counts to weblinks, shows how many users have visited each site
+· Database weblinks changes: added referals (smallint(6)).
+· Fixed register.php to use correct css code.
+
+21.08.2003
+· Added Submit Link form to enable visitors/members to submit weblinks, these
+are stored in a database table (linksubmits). Administrators will be able to
+move these links into the weblinks database, or delete any inappropriate links
+via a new admin panel.
+
+24.08.2003
+· Cleaned up the CSS used for each theme, simplified as much as possible
+· Created a third theme entitled Simplicity.
+
+26.08.2003
+· Added new theme, L3.
+
+27.08.2003
+· Added new theme, sophos.
+
+28.08.2003
+· Fixed subject slashing in Submit News feature.
+· Added Submissions Admin Panel, enables Administrators to import submitted News.
+Administrator also has the option to delete any submitted News items. Web Link
+submission management to be added soon.
+· Fixed subject slashing in Edit News and Edit Article admin panels.
+
+29.08.2003
+· Added Web Link management to Submissions Admin Panel, enables Administrators
+to import submitted Web Links. Administrator also has the option to delete any
+submitted Web Link.
+· Fixed Admin account creation in install.php
+· Updated upgrade.php to add appropriate database changes for v1.32.
+
+PHP-Fusion v1.33
+
+30.08.2003
+· Replaced Alt1 & Alt2 buttons with Small2 & Alt in Add/Edit Article & Add/Edit News
+Admin Panels. Alt1 & Alt2 were made redundant in the CSS adjustments in v1.32.
+· New Messages (or unread Messages) appear in bold text in users inbox.
+· Removed redundant Javascript from subheader.php & subheaderjs.php.
+
+31.08.2003
+· Added RE feature to Private Messages, subject is now filled in when a user replies to
+a Private Message.
+· Cleaned up the Profile, Send Message and Read Message, old CSS code replaced.
+· Removed the options part of the Members list, users can now simply click on a username
+to view their profiles.

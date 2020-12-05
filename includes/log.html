@@ -1,0 +1,267 @@
+<head>
+<title>MyCMS Change Log</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+td {font-family: Verdana; font-size: 8pt; color: #dddddd; text-align: justify}
+-->
+</style>
+</head>
+
+<body bgcolor="#777777" text="#DDDDDD">
+
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td colspan="2"><b><font color="#ffcc44">MyCMS Pre-release/v1.1 (Titanium) Updates</font></b></td></tr>
+<tr><td colspan="2" height="20"></td></tr>
+<tr><td valign="top" width="100"><b>19.05.2003</b></td><td>
+<b><font color="black">· </font>New Tables</b><br>
+<b><font color="black">· </font></b>Online: Used to log Member activity over last 5 minutes, entries older than 5 minutes
+are automatically deleted. The Users logged in this table will appear in the 'Members
+Online' portion of your MyCMS site. Table comprises of 4 columns - oid, username, lastactive and ip.<br>
+<br>
+<b><font color="black">· </font>Table Changes</b><br>
+<b><font color="black">· </font></b>Downloads: 1 new column, upated.<br>
+<b><font color="black">· </font></b>Settings: 3 new columns, sitename, siteemail & version.<br>
+<b><font color="black">· </font></b>Forums: Renamed type column to forumtype to avoid clash with MySQL variable TYPE.<br>
+<br>
+<b><font color="black">· </font>HTML Updates</b><br>
+<b><font color="black">· </font></b>Improved site design with new simplified generic theme.<br>
+<b><font color="black">· </font></b>Updated Settings page to include 2 new settings, Site Name & Site Email.<br>
+<b><font color="black">· </font></b>Added Members Online segment to side bar.<br>
+<b><font color="black">· </font></b>Fixed rendering glitch in Downloads page (table breaks if empty).<br>
+<b><font color="black">· </font></b>Added 'Smalltext' button to Forums and User Panel.<br>
+<br>
+<b><font color="black">· </font>Code Updates</b><br>
+<b><font color="black">· </font></b>Fixed Edit Poll page coding.<br>
+<b><font color="black">· </font></b>Added Users-Online code to header.<br>
+<b><font color="black">· </font></b>Updated subheader with improved Java-Script.<br>
+<b><font color="black">· </font></b>Adjusted the method of checking the cookie of Members to prevent posting errors.</td></tr>
+<tr><td colspan="2" height="20"></td></tr>
+<tr><td valign="top" width="100"><b>20.05.2003</b></td><td>
+<b><font color="black">· </font></b>Rewrote the Members Online code to fix a few bugs, Members & Visitors now logged properly.</td></tr>
+<tr><td colspan="2" height="20"></td></tr>
+<tr><td valign="top" width="100"><b>29.05.2003</b></td><td>
+<b><font color="black">· </font></b>Added another segment of code to the Members Online code to identify & clear a Visitor who
+logs in or a Member who logs out.</td></tr>
+<tr><td colspan="2" height="20"></td></tr>
+<tr><td valign="top" width="100"><b>31.05.2003</b></td><td>
+<b><font color="black">· </font></b>Site Navigation menu can now be customised via the Admin Panel. Two new panels are
+located in the Admin Panel, <i>Edit Site Links</i>, and <i>Link Editor</i> (via <i>Edit Site Links</i>).
+One new database table has been added containing 4 columns: lid, linkname, linkurl & row order.
+</td></tr>
+<tr><td colspan="2" height="20"></td></tr>
+<tr><td valign="top" width="100"><b>01.06.2003</b></td><td>
+<b><font color="black">· </font></b>Added code to viewforum.php & viewthread.php to paginate the Forums and Threads (same
+code used to paginate the news page).<br>
+<b><font color="black">· </font></b>Optimised subheader, Javascript subheader is now seperate, standard subheader (subheader.php)
+and Javascript subheader (subheaderjs.php).<br>
+<b><font color="black">· </font></b>Began work on optimising Downloads page layout code.<br>
+<b><font color="black">· </font></b>Dropped 'updated' column from Downloads database table.<br>
+<b><font color="black">· </font></b>Improved layout of Downloads Admin Panels for improved ease of use.<br>
+<b><font color="black">· </font></b>Dropped 'updated' column from Articles database table.<br>
+<b><font color="black">· </font></b>Altered option in Edit Article Admin Panel, if checked the 'posted' date is updated.<br>
+<b><font color="black">· </font></b>Made appropriate alterations to the articles.php and readarticle.php files.<br>
+<b><font color="black">· </font></b>Improved the layout of the Admin Navigation menu.<br>
+</td></tr>
+<tr><td colspan="2" height="20"></td></tr>
+<tr><td valign="top" width="100"><b>02.06.2003</b></td><td>
+<b><font color="black">· </font></b>Modified the Shoutbox, both Visitors & Members may now post messages. The message
+textbox has been replaced with a multirow textarea.<br>
+<b><font color="black">· </font></b>Added 1 new column to the Shoutbox database table: userip, used to log the postee's
+IP Address.
+</td></tr>
+<tr><td colspan="2" height="20"></td></tr>
+<tr><td valign="top" width="100"><b>03.06.2003</b></td><td>
+<b><font color="black">· </font></b>Created first draft of proposed Install Script for the official release of
+MyCMS Titanium Edition.<br>
+<b><font color="black">· </font></b>Numerous database table optimisations made, should improve overall performance of
+the rendering speed & database size.
+</td></tr>
+<tr><td colspan="2" height="20"></td></tr>
+<tr><td valign="top" width="100"><b>04.06.2003</b></td><td>
+<b><font color="black">· </font></b>Added Shoutbox Admin Panel, Administrators now able to edit or delete
+shouts without the need to use a 3rd party database management app.<br>
+<b><font color="black">· </font></b>Fixed a minor glitch in the previous page link code (used on main News Page,
+Forum, Threads and Shoutbox admin pages).
+</td></tr>
+<tr><td colspan="2" height="20"></td></tr>
+<tr><td valign="top" width="100"><b>05.06.2003</b></td><td>
+<b><font color="black">· </font></b>Began work on polishing up the Admin Panels, this is part of the final
+release preparation with the aim to improve overall presentation. No major changes expected.
+</td></tr>
+<tr><td colspan="2" height="20"></td></tr>
+<tr><td valign="top" width="100"><b>06.06.2003</b></td><td>
+<b><font color="black">· </font></b>Completed work on Admin Panels.<br>
+<b><font color="black">· </font></b>Dramatically optimised the code used to render the Downloads page.
+</td></tr>
+<tr><td colspan="2" height="20"></td></tr>
+<tr><td valign="top" width="100"><b>07.06.2003</b></td><td>
+<b><font color="black">· </font></b>Added Web Links Admin Panel, allows you to easily Add, Edit or
+Delete Links which are displayed in the Web Links portion of MyCMS.
+</td></tr>
+<tr><td colspan="2" height="20"></td></tr>
+<tr><td valign="top" width="100"><b>09.06.2003</b></td><td>
+<b><font color="black">· </font></b>Made some minor alterations to the Downloads sub-category pages.<br>
+<b><font color="black">· </font></b>Fixed the order in which Comments appear.<br>
+<b><font color="black">· </font></b>Improved the look of the Comments pages, Comments are seperated
+better on both News & Article Comment pages.<br>
+<b><font color="black">· </font></b>Added Delete options to Download Categories & Files.<br>
+<b><font color="black">· </font></b>Added Delete options to Web Links.
+</td></tr>
+<tr><td colspan="2" height="20"></td></tr>
+<tr><td valign="top" width="100"><b>10.06.2003</b></td><td>
+<b><font color="black">· </font></b>Added some more code to the Thread and Post deletion routines to fix
+Threads, Posts and Replies count.<br>
+<b><font color="black">· </font></b>Fixed the Reply Subject, if a Reply is posted to a Thread without a
+subject it defaults to RE: (Thread-Subject).<br>
+<b><font color="black">· </font></b>General improvements to Admin Panel, some final alterations.
+</td></tr>
+<tr><td colspan="2" height="20"></td></tr>
+<tr><td valign="top" width="100"><b>11.06.2003</b></td><td>
+<b><font color="black">· </font></b>Completed initial test on installation script.
+</td></tr>
+<tr><td colspan="2" height="20"></td></tr>
+<tr><td valign="top" width="100"><b>12.06.2003</b></td><td>
+<b><font color="black">· </font></b>Moved graphical elements into seperate Theme folder for easier future
+Theme transitions or additions.<br>
+<b><font color="black">· </font></b>Created default Theme to ship with official release of MyCMS TE.<br>
+<b><font color="black">· </font></b>Fixed minor flaw in unique counter display.<br>
+<b><font color="black">· </font></b>Added table rendering to 'No news has been posted yet' message.<br>
+<b><font color="black">· </font></b>Fixed code in the Edit Poll Admin Panel, now fully functional.<br>
+<b><font color="black">· </font></b>Fixed rendering error in Shoutbox Admin Panel.<br>
+<b><font color="black">· </font></b>Added Messages to Edit News, Edit Article and Edit Poll when no
+items are available to edit.<br>
+</td></tr>
+<tr><td colspan="2" height="20"></td></tr>
+<tr><td valign="top" width="100"><b>13.06.2003</b></td><td>
+<b><font color="black">· </font></b>Added option to Shoutbox Admin to delete posts older than 10, 20,
+30, 60 or 90 days.<br>
+<b><font color="black">· </font></b>Added option to install script to copy users database table from
+the beta release of MyCMS.
+<tr><td colspan="2" height="20"></td></tr>
+<tr><td valign="top" width="100"><b>15.06.2003</b></td><td>
+<b><font color="black">· </font></b>Added Recent Forum Threads block to sidebar, displays the most
+recently posted/updated Forum Threads.<br>
+<b><font color="black">· </font></b>Cleaned up the stylesheet and subheader.php files.
+</td></tr>
+<tr><td colspan="2" height="20"></td></tr>
+<tr><td valign="top" width="100"><b>16.06.2003</b></td><td>
+<b><font color="black">· </font></b>Added option to move a Web Link to another Category in Edit Link
+Admin Panel.<br>
+<b><font color="black">· </font></b>Moved subheader style code into stylesheet file for easier future 
+theme additions.<br>
+<b><font color="black">· </font></b>Added some default database table entries into Sitelinks and Settings
+table to installation script.<br>
+<b><font color="black">· </font></b>Added download tracking to Downloads page, ideal for seeing how
+popular a Local or Linked Download is.
+</td></tr>
+<tr><td colspan="2" height="20"></td></tr>
+<tr><td valign="top" width="100"><b>17.06.2003</b></td><td>
+<b><font color="black">· </font></b>Isolated glitch in forum code, Subject and Message now slashed
+correctly to prevent database errors.<br>
+</td></tr>
+
+<tr><td colspan="2" height="20"></td></tr>
+<tr><td colspan="2"><b><font color="#ffcc44">MyCMS v1.2 (Titanium) Updates</font></b></td></tr>
+<tr><td colspan="2" height="20"></td></tr>
+<tr><td valign="top" width="100"><b>18.06.2003</b></td><td>
+<b><font color="black">· </font></b>Added table rendering to 'No news has been posted yet' message.<br>
+<b><font color="black">· </font></b>Added siteurl entry to Settings Admin Panel.<br>
+<b><font color="black">· </font></b>Added siteurl column to Settings database table.<br>
+</td></tr>
+<tr><td colspan="2" height="20"></td></tr>
+<tr><td valign="top" width="100"><b>19.06.2003</b></td><td>
+<b><font color="black">· </font></b>Created the foundation for the new upgrade script designed to
+update your database and installation version.<br>
+</td></tr>
+<tr><td colspan="2" height="20"></td></tr>
+<tr><td valign="top" width="100"><b>20.06.2003</b></td><td>
+<b><font color="black">· </font></b>Fixed the Thread deletion code, all related Posts are now deleted.<br>
+<b><font color="black">· </font></b>Created script to service Forums, resets Threads, Post & Replies counts
+and deletes Posts which have no parent Thread.<br>
+<b><font color="black">· </font></b>Fixed joined date shown in author info of Forum Threads & Posts.<br>
+<b><font color="black">· </font></b>New look Forum Admin Panel encorporates forum service script.<br>
+<b><font color="black">· </font></b>Updated Download page Javascript to conform with Mozilla guidelines.<br>
+</td></tr>
+<tr><td colspan="2" height="20"></td></tr>
+<tr><td valign="top" width="100"><b>24.06.2003</b></td><td>
+<b><font color="black">· </font></b>Fixed a minor rendering error on postnewthread.php, postreply.php
+and postedit.php pages.<br>
+<b><font color="black">· </font></b>Fixed glitch in postreply.php to correctly slash ' & " characters.<br>
+<b><font color="black">· </font></b>Fixed Delete function in Site Links Admin Panel.<br>
+<b><font color="black">· </font></b>Added another SQL query to includes/updateuser.php to update edituser
+field in the posts database table.<br>
+</td></tr>
+
+<tr><td colspan="2" height="20"></td></tr>
+<tr><td colspan="2"><b><font color="#ffcc44">MyCMS v1.3 (Chromium) Updates & Fixes</font></b></td></tr>
+<tr><td colspan="2" height="20"></td></tr>
+<tr><td valign="top" width="100"><b>25.06.2003</b></td><td>
+<b><font color="black">· </font></b>Added Private Message facility for Site Members.<br>
+<b><font color="black">· </font></b>Added Site Members list.<br>
+<b><font color="black">· </font></b>Altered layout of Member's Profile page, includes link to Send Private
+Message.
+</td></tr>
+<tr><td colspan="2" height="20"></td></tr>
+<tr><td valign="top" width="100"><b>03.07.2003</b></td><td>
+<b><font color="black">· </font></b>Removed Web Links box and added new Web Links Page, this displays
+your Web links in a multi-column page.
+</td></tr>
+<tr><td colspan="2" height="20"></td></tr>
+<tr><td valign="top" width="100"><b>07.07.2003</b></td><td>
+<b><font color="black">· </font></b>Added 'lastvisit' column to Users database table in preparation for
+Forum updates.
+<b><font color="black">· </font></b>Added 'lastvisit' cookie to calculate number of new Forum Posts/Threads.
+The cookie value is taken from the User's database entry (if they are registered). This cookie expires
+after one hour, whilst the User's lastvisit database value is updated whenever they visit the Forum area.<br>
+<b><font color="black">· </font></b>Created display icons to signify New Posts/Threads in the Forum. On the
+Forum index page Grey signifies No New Posts and yellow signifies there are New Posts. On the View Threads
+page Threads with a Grey folder indicate No New Posts whilst Yellow indicates there are New Posts. A Red
+folder indicates there are 20 or more new posts in the Thread (Hot Thread).
+</td></tr>
+<tr><td colspan="2" height="20"></td></tr>
+<tr><td valign="top" width="100"><b>11.07.2003</b></td><td>
+<b><font color="black">· </font></b>Created better buttons for Forums including New Thread, Post Reply,
+ICQ, MSN, Yahoo, Web URL and Send PM.
+</td></tr>
+<tr><td colspan="2" height="20"></td></tr>
+<tr><td valign="top" width="100"><b>13.07.2003</b></td><td>
+<b><font color="black">· </font></b>Fixed the Prev/Next links on the View Forum and View Thread pages.<br>
+<b><font color="black">· </font></b>Added Google web search box to sidebar.
+</td></tr>
+<tr><td colspan="2" height="20"></td></tr>
+<tr><td valign="top" width="100"><b>15.07.2003</b></td><td>
+<b><font color="black">· </font></b>Renamed the comment columns in both newscomments and articlecomments
+database tables to message. Comment turns out to be a MySQL property.<br>
+<b><font color="black">· </font></b>Repaired the comment display on newscomments and articlecomments pages.
+</td></tr>
+<tr><td colspan="2" height="20"></td></tr>
+<tr><td valign="top" width="100"><b>17.07.2003</b></td><td>
+<b><font color="black">· </font></b>Added Site Intro option which if set displays a message at the top of
+the main page (index.php).<br>
+<b><font color="black">· </font></b>Added siteintro column to settings database table to accommodate above
+mentioned new feature.<br>
+<b><font color="black">· </font></b>Updated the upgrade script to upgrade existing MyCMS installations to
+Version 1.3 (works on Version 1.2 only).<br>
+<b><font color="black">· </font></b>Created a new default banner and banner for install script.<br>
+<b><font color="black">· </font></b>Added appropriate changes to install script to install MyCMS v1.3.
+</td></tr>
+
+<tr><td colspan="2" height="20"></td></tr>
+<tr><td colspan="2"><b><font color="#ffcc44">MyCMS v1.31 (Chromium) Updates & Fixes</font></b></td></tr>
+<tr><td colspan="2" height="20"></td></tr>
+<tr><td valign="top" width="100"><b>22.07.2003</b></td><td>
+<b><font color="black">· </font></b>Added Header CSS class.<br>
+<b><font color="black">· </font></b>Made slight alteration to subheader.php & subheaderjs.php.
+</td></tr>
+<tr><td colspan="2" height="20"></td></tr>
+<tr><td valign="top" width="100"><b>22.07.2003</b></td><td>
+<b><font color="black">· </font></b>Cleaned up the CSS removing some unused classes.<br>
+<b><font color="black">· </font></b>Added nextprev CSS class.<br>
+<b><font color="black">· </font></b>Altered shownews.php, readarticle.php and shoutboxadmin.php Next/Prev
+element to make use of new nextprev CSS class.
+</td></tr>
+</table>
+
+</body>
+</html>

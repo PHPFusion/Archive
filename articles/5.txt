@@ -1,0 +1,35 @@
+A question I am commonly asked is how to backup various parts of a Windows installation. You can quite easily backup your important files & emails by simply copying a few folders to another folder. That folder can then be zipped and burned onto a CD-R disc or preferably a CD-RW disc.
+
+This guide is written for Windows XP and Windows 2000, for Windows 95/98 & ME you will find the folders either in <span class="alt">Program Files</span>/<span class="alt">Application Data</span>/ or in <span class="alt">Windows</span>/. Note that I've used the name John Smith as an example, you will have your own named folder instead.
+
+<b>Outlook Express (Sent & Recieved Emails)</b>
+
+<span class="alt">Documents ans Settings</span>/<span class="alt">John Smith</span>/<span class="alt">Local Settings</span>/<span class="alt">Application Data</span>/
+<span class="alt">Identities</span>/<span class="alt">{1C15046A-18E7-4504-A6F6-B091429A6D50}</span>/<span class="alt">Microsoft</span>
+
+<span class="small2">N.B. {1C15046A-18E7-4504-A6F6-B091429A6D50} will differ on your system</span>.
+
+Copy the <span class="alt">Outlook Express</span> folder to your backup folder.
+
+<b>Outlook Express (Email Account Settings)</b>
+Open <span class="alt">Outlook Express</span>. From the <span class="alt">Tools</span> menu, go into <span class="alt">Accounts</span>. Click the <span class="alt">Mail</span> tab, then click once on your <span class="alt">Email</span> account to highlight it. Now click <span class="alt">Export</span> and save the file to your backup folder. Repeat this procedure for each individual Email Account.
+
+<b>Address Book</b>
+
+<span class="alt">Documents ans Settings</span>/<span class="alt">John Smith</span>/<span class="alt">Application Data</span>/<span class="alt">Microsoft</span>/
+
+Copy the <span class="alt">Address Book</span> folder to your backup folder.
+
+Now let's backup our actual Email account settings. Open Outlook Express. From the Tools menu, go into Accounts. Click the Mail tab, then click once on your Email account to highlight it. Now click Export and save the file to your backup folder.
+
+<b>Favorites</b>
+
+<span class="alt">Documents ans Settings</span>/<span class="alt">John Smith</span>/
+
+Copy the <span class="alt">Favorites</span> folder to your backup folder.
+
+<b>My Documents</b>
+
+<span class="alt">Documents ans Settings</span>/<span class="alt">John Smith</span>/
+
+Copy the <span class="alt">My Documents</span> folder to your backup folder.

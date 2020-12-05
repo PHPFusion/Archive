@@ -1,0 +1,73 @@
+Requirements: Windows 2000/NT/XP - (Windows 9x/ME may differ)
+
+I receive a lot of emails from folks wanting to know how to go about learning to create dynamic websites using PHP.  Before you begin, I highly recommend you install Apache along with PHP4 and Mysql.  The reason for this is that you cannot test or view PHP in your own web browser without having a way of parsing the code. The main problem however, is that it can be tricky to get everything to work properly since you need to edit two rather long config files. This tutorial will guide you through the process, if all else fails you can download my pre-configured files.
+
+<p>Let's get the required files, these are all freely available for download.
+
+<p>The first file you need is Apache HTTP Web Server, you can download it from <a href="http://httpd.apache.org/download.cgi" target="_blank">Here</a>. The latest version is 2.0.46, I recommend the second release rather than the 1.3x series because it is easier to manage. Look for the Win32 MSI Installer, the file size is approximately <i>5.7Mb</i>.
+
+<p>Apache running on its own will only display HTML based web pages, in order for it to parse PHP we need to download and install PHP 4. You can download the latest version <a href="http://www.php.net/downloads.php" target="_blank">Here</a>, at the time of writing the latest version is 4.3.2. It's better to get the zip package as opposed to the installer because it's easier to do it manually, and it works first time! file size is approximately <i>5.8Mb</i>.
+
+<p>One more download remaining, MySQL. This is the database engine which you often see mentioned on dynamic sites. The latest version is 4.0.12 and is available for download <a href="http://www.mysql.com/downloads/download.php?file=Downloads%2FMySQL-4.0%2Fmysql-4.0.12-win.zip&pick=mirror" target="_blank">Here</a>.  Unfortunately if you are a dial-up internet user you are in for a long wait, yep the file size is a whopping <i>20.9Mb</i> (See you in a few hours!).  When you have downloaded all of the required tools, proceed to step 2.
+<--PAGEBREAK-->
+The first thing you need to install is Apache HTTP Web Server. Follow the on-screen prompts until you are asked for a Network Domain, Server Name, and Administrator's Email Address. You should set these as follows:
+
+<p><span class="alt2">Network Domain</span><br>
+localhost
+
+<p><span class="alt2">Server Name</span><br>
+127.0.0.1
+
+<p><span class="alt2">Administrator's Email Address</span><br>
+Your Email address
+
+<p><span class="alt2">Install Apache HTTP Server 2.0 programs and shortcuts for</span><br>
+choose for All Users, on Port 80, as a Service.
+
+<p>Now it's on to the installation location, select <span class="alt2">Custom</span> as the setup type then click next. I recommend changing the installation location since you will be accessing the Apache2 folder quite a lot. Under <span class="alt2">Install To</span>, click Change and set the path to <span class="alt2">C:\</span>, this will install Apache 2 to a folder named Apache2 on the root of your main hard drive.
+
+<p>Ok, so now we have Apache2 installed, you should see an icon in your system tray like this: <img src="images/ap2mon.gif">. If the arrow is green, Apach2 is running, if it's red then it is off. In most cases it will always be on immediately after completing the installation.
+
+<p>Now check to see if Apache2 is working. Open up your web browser and enter the web address <span class="alt2">http://localhost/</span>, you should see a page like <a href="bin/index.html" target="_blank">this example</a>. If all has gone to plan you now have your web server installed. Now it's time to add PHP4.
+<--PAGEBREAK-->
+Unzip the file php-4.3.2-Win32.zip, copy the folder located in the unzipped folder to <span class="alt2">C:\Apache2</span>. Rename the folder to <span class="alt2">php-4.3.2</span>. Now copy the file php4ts.dll from <span class="alt2">C:\Apache2\php-4.3.2</span> to <span class="alt2">C:\Windows\System32</span>.
+
+<p>Now that we have everything where it should be, it's time to edit the config files, start with Apache's config file. Go to <span class="alt2">C:\Apache2\conf\</span> and open up the file <span class="alt2">httpd.txt</span>.
+
+<p>Look for the line <span class="alt2">DirectoryIndex index.html index.html.var</span> and change it to <span class="alt2">DirectoryIndex index.html index.html.var index.php</span>.
+
+<p>Now we need to tell Apache where to find PHP, look for a line which reads <span class="alt2">ScriptAlias /cgi-bin/ "C:/Apache2/cgi-bin/"</span>, you need to add a new line, <span class="alt2">ScriptAlias /php/ "C:/Apache2/php-4.3.2/"</span>. Next up is to add a line to the AddType portion of the config file. Add this line, <span class="alt2">AddType application/x-httpd-php .phtml .php</span>.
+
+<p>One more line to add and we're done, scroll down through the config just a bit until you see the Action section, add the line <span class="alt2">Action application/x-httpd-php /php/php.exe</span>. That's the httpd config file set, now to tackle the php.ini config file.
+
+<--PAGEBREAK-->
+<p>In order for PHP to work correctly you need to make a few changes to the php.ini file. Go to C:\Apache2\php-4.3.2 and look for a file called <span class="alt2">php.ini-dist</span>, rename this to <span class="alt2">php.ini</span> and then open it.
+
+<p>Look for this section:<br>
+;;;;;;;;;;;;;;;;;;;;;;;;;<br>
+; Paths and Directories ;<br>
+;;;;;;;;;;;;;;;;;;;;;;;;;<br>
+
+<p>Change the Windows include line <span class="alt2">;include_path = ".;c:\php\includes"</span> to <span class="alt2">include_path = ".; \apache2\includes;\apache2\htdocs\;\apache2\htdocs\phpmyadmin"</span>. Notice how we remove the preceeding comma, this is absolutely essential since the ini file ignores lines beginning with commas.
+
+<p>That's all the hard work done, now it's time to restart Apache2. Right click the Apache 2 icon in your system tray (<img src="images/ap2mon.gif">) and select Open Apache Monitor, then click the button marked Restart. You should see a message indicating the service is restarting, it should immediately indicate that it has successfully restarted.
+
+<p>In order to check if PHP is working you need to create a simple script. To save time you can download it <a href="bin/phpinfo.zip">here</a>. Unzip this file and copy the file <span class="alt2">phpinfo.php</span> to <span class="alt2">C:\Apache2\htdocs</span>.
+
+<p>Now open up your web browser and enter the web address <span class="alt2">http://localhost/phpinfo.php</span>, you should see a page displaying a load of PHP details, if you do then you have successfully installed PHP. Now we move on to the final step, MySQL.
+
+<--PAGEBREAK-->
+
+<p>Unzip the file mysql-4.0.12-win, run Setup, make sure you set the installation path to C:\Apache2\mysql. Use the typical settings option to complete the first step of the installation.
+
+<p>Now browse to <span class="alt2">C:\Apache2\mysql\bin</span> and launch the application <span class="alt2">winmysqladmin.exe</span>. The main MySQL window will appear briefly before presenting you with a dialog box asking for your username and password, enter any username and password you want (obviously make sure you can remember them). You will now see an icon in your system tray which looks like a set of traffic lights.
+
+<p>Right click the traffic lights icon, point to <span class="alt2">Win NT</span>, and choose <span class="alt2">Install the Service</span>. A dialog box will appear asking if you want to install the MySQL Server Service, click yes. Right click the traffic lights icon (again), point to <span class="alt2">Win NT</span>, this time choose <span class="alt2">Start the Service</span>, click yes when presented with a dialog box. The traffic lights should switch to green, if so, MySQL is now installed.
+
+<--PAGEBREAK-->
+
+<p>If you had trouble editing either the httpd.txt or the php.ini, you can download my preconfigured config files. <a href="bin/httpd-php.zip">This zip</a> contains both of these files, copy the httpd.txt file to <span class="alt2">C:\Apache2\conf</span> and the php.ini file to <span class="alt2">C:\Apache2\php-4.3.2</span>.
+
+<p>If you have any comments or additions to add regarding this article, please post them in the comments feature provided.
+
+<p>Good Luck.

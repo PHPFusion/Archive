@@ -1,0 +1,223 @@
+<?
+/*
+---------------------------------------------------
+	PHP-Fusion - Content Management System
+	-------------------------------------------
+	© Nick Jones (Digitanium) 2002-2004
+	http://www.php-fusion.co.uk
+	nick@php-fusion.co.uk
+	-------------------------------------------
+	Released under the terms and conditions of
+	the GNU General Public License (Version 2)
+---------------------------------------------------
+*/
+@require "../fusion_config.php";
+require "../header.php";
+require fusion_basedir."subheader.php";
+require fusion_langdir."admin/admin_main.php";
+require fusion_langdir."admin/admin_news-articles.php";
+require "navigation.php";
+
+if (!Admin()) header("Location: ../index.php");
+
+if (Admin()) {
+	$breaks = " checked";
+	if (isset($_POST['save'])) {
+		$subject = stripinput($subject);
+		$body = addslashes($body);
+		if ($body2 != "") {
+			$body2 = addslashes($body2);
+		}
+		if (isset($_POST['line_breaks'])) { $breaks = "y"; } else { $breaks = "n"; }
+		if (isset($news_id)) {
+			$result = dbquery("UPDATE ".$fusion_prefix."news SET news_subject='$subject', news_news='$body', news_extended='$body2', news_breaks='$breaks' WHERE news_id='$news_id'");
+			opentable(LAN_400);
+			echo "<center><br>
+".LAN_401."<br><br>
+<a href='news.php'>".LAN_402."</a><br><br>
+<a href='index.php'>".LAN_403."</a><br><br>
+</center>\n";
+			closetable();
+		} else {
+			$result = dbquery("INSERT INTO ".$fusion_prefix."news VALUES('', '$subject', '$body', '$body2', '$breaks', '".$userdata['user_id']."', '".time()."', '0', '0')");
+			opentable(LAN_404);
+			echo "<center><br>
+".LAN_405."<br><br>
+<a href='news.php'>".LAN_402."</a><br><br>
+<a href='index.php'>".LAN_403."</a><br><br>
+</center>\n";
+			closetable();
+		}
+	} else if (isset($_POST['delete'])) {
+		$result = dbquery("DELETE FROM ".$fusion_prefix."news WHERE news_id='$news_id'");
+		$result = dbquery("DELETE FROM ".$fusion_prefix."comments WHERE comment_item_id='$news_id' and comment_type='N'");
+		opentable(LAN_406);
+		echo "<center><br>
+".LAN_407."<br><br>
+<a href='news.php'>".LAN_402."</a><br><br>
+<a href='index.php'>".LAN_403."</a><br><br>
+</center>\n";
+		closetable();
+	} else {
+		if (isset($_POST['preview'])) {
+			$subject = stripinput($subject);
+			$body = stripslashes($body);
+			$bodypreview = str_replace("src='", "src='../", $body);
+			if ($body2 != "") {
+				$body2 = stripslashes($body2);
+				$body2preview = str_replace("src='", "src='../", $body2);
+			}
+			if (isset($_POST['line_breaks'])) {
+				$breaks = " checked";
+				$bodypreview = nl2br($bodypreview);
+				if ($body2 != "") { $body2preview = nl2br($body2preview); }
+			} else {
+				$breaks = "";
+			}
+			opentable($subject);
+			echo "$bodypreview\n";
+			closetable();
+			if ($body2preview != "") {
+				tablebreak();
+				opentable($subject);
+				echo "$body2preview\n";
+				closetable();
+			}
+			tablebreak();
+		}
+		$result = dbquery("SELECT * FROM ".$fusion_prefix."news ORDER BY news_datestamp DESC");
+		if (dbrows($result) != 0) {
+			while ($data = dbarray($result)) {
+				if (isset($news_id)) {
+					if ($news_id == $data['news_id']) { $sel = " selected"; } else { $sel = ""; }
+				}
+				$editlist .= "<option value='".$data['news_id']."'$sel>".$data['news_subject']."</option>\n";
+			}
+		}
+		opentable(LAN_408);
+		echo "<form name='selectform' method='post' action='$PHP_SELF'>
+<center>
+<select name='news_id' class='textbox' style='width:250px;'>
+$editlist</select>
+<input type='submit' name='edit' value='".LAN_409."' class='button'>
+<input type='submit' name='delete' value='".LAN_410."' class='button'>
+</center>
+</form>\n";
+		closetable();
+		tablebreak();
+		if (isset($_POST['edit'])) {
+			$result = dbquery("SELECT * FROM ".$fusion_prefix."news WHERE news_id='$news_id'");
+			if (dbrows($result) != 0) {
+				$data = dbarray($result);
+				$subject = $data['news_subject'];
+				$body = stripslashes($data['news_news']);
+				$body2 = stripslashes($data['news_extended']);
+				if ($data['news_breaks'] == "y") { $breaks = " checked"; }
+			}
+		}
+		if (isset($news_id)) {
+			$action = $PHP_SELF."?news_id=$news_id";
+			opentable(LAN_400);
+		} else {
+			$action = $PHP_SELF;
+			opentable(LAN_404);
+		}
+		echo "<script language='Javascript'>
+function ValidateForm(frm) {
+	if(frm.subject.value=='') {
+		alert('".LAN_550."');
+		return false;
+	}
+}
+</script>
+<form name='editform' method='post' action='$action' onSubmit='return ValidateForm(this)'>
+<table align='center' cellspacing='0' cellpadding='0' class='tbl'>
+<tr>
+<td width='100'>".LAN_411."</td><td width='80%'><input type='text' name='subject' value='$subject' class='textbox' style='width: 250px;'></td>
+</tr>
+<tr>
+<td width='100'>".LAN_412."</td><td width='80%'><textarea name='body' cols='95' rows='5' class='textbox' onselect='updatePos(this);' onkeyup='updatePos(this);' onclick='updatePos(this);' ondblclick='updatePos(this);'>$body</textarea></td>
+</tr>
+<tr>
+<td></td><td>
+<input type='button' value='b' class='button' style='font-weight:bold;width:25px;' onClick=\"AddText('<b>', '</b>');\">
+<input type='button' value='i' class='button' style='font-style:italic;width:25px;' onClick=\"AddText('<i>', '</i>');\">
+<input type='button' value='u' class='button' style='text-decoration:underline;width:25px;' onClick=\"AddText('<u>', '</u>');\">
+<input type='button' value='link' class='button' style='width:35px;' onClick=\"AddText('<a href=\'\' target=\'_blank\'>', '</a>');\">
+<input type='button' value='img' class='button' style='width:35px;' onClick=\"insertText('<img src=\'fusion_images/\' style=\'margin:5px;\' align=\'left\'>');\">
+<input type='button' value='center' class='button' style='width:45px;' onClick=\"AddText('<center>', '</center>');\">
+<input type='button' value='small' class='button' style='width:40px;' onClick=\"AddText('<span class=\'small\'>', '</span>');\">
+<input type='button' value='small2' class='button' style='width:45px;' onClick=\"AddText('<span class=\'small2\'>', '</span>');\">
+<input type='button' value='alt' class='button' style='width:25px;' onClick=\"AddText('<span class=\'alt\'>', '</span>');\"><br>
+</td>
+</tr>
+<tr>
+<td width='100'>".LAN_413."</td><td><textarea name='body2' cols='95' rows='10' class='textbox' onselect='updatePos(this);' onkeyup='updatePos(this);' onclick='updatePos(this);' ondblclick='updatePos(this);'>$body2</textarea></td>
+</tr>
+<tr>
+<td></td><td>
+<input type='button' value='b' class='button' style='font-weight:bold;width:25px;' onClick=\"AddText2('<b>', '</b>');\">
+<input type='button' value='i' class='button' style='font-style:italic;width:25px;' onClick=\"AddText2('<i>', '</i>');\">
+<input type='button' value='u' class='button' style='text-decoration:underline;width:25px;' onClick=\"AddText2('<u>', '</u>');\">
+<input type='button' value='link' class='button' style='width:35px;' onClick=\"AddText2('<a href=\'\' target=\'_blank\'>', '</a>');\">
+<input type='button' value='img' class='button' style='width:35px;' onClick=\"insertText2('<img src=\'fusion_images/\' style=\'margin:5px;\' align=\'left\'>');\">
+<input type='button' value='center' class='button' style='width:45px;' onClick=\"AddText2('<center>', '</center>');\">
+<input type='button' value='small' class='button' style='width:40px;' onClick=\"AddText2('<span class=\'small\'>', '</span>');\">
+<input type='button' value='small2' class='button' style='width:45px;' onClick=\"AddText2('<span class=\'small2\'>', '</span>');\">
+<input type='button' value='alt' class='button' style='width:25px;' onClick=\"AddText2('<span class=\'alt\'>', '</span>');\"><br>
+</td>
+</tr>
+<tr>
+<td align='center' colspan='2'><br>
+<input type='checkbox' name='line_breaks' value='yes'$breaks>".LAN_414."<br><br>
+<input type='submit' name='preview' value='".LAN_415."' class='button'>
+<input type='submit' name='save' value='".LAN_416."' class='button'></td>
+</tr>
+</table>
+</form>\n";
+		closetable();
+		echo "<script language='JavaScript'>
+var editBody = document.editform.body;
+var editBody2 = document.editform.body2;
+function insertText(theText) {
+	if (editBody.createTextRange && editBody.curPos) {
+		editBody.curPos.text = theText;
+	} else {
+		editBody.value += theText;
+	}
+	editBody.focus();
+}
+function insertText2(theText) {
+	if (editBody2.createTextRange && editBody2.curPos) {
+		editBody2.curPos.text = theText;
+	} else {
+		editBody2.value += theText;
+	}
+	editBody2.focus();
+}
+function AddText(wrap,unwrap) {
+	if (editBody.curPos) {
+		insertText(wrap + editBody.curPos.text + unwrap);
+	} else {
+		insertText(wrap + unwrap);
+	}
+}
+function AddText2(wrap,unwrap) {
+	if (editBody2.curPos) {
+		insertText2(wrap + editBody2.curPos.text + unwrap);
+	} else {
+		insertText2(wrap + unwrap);
+	}
+}
+function updatePos(obj) {
+	if (obj.createTextRange) {
+		obj.curPos = document.selection.createRange().duplicate();
+	}
+}
+</script>\n";
+	}
+}
+
+echo "</td>\n";
+require "../footer.php";
+?>

@@ -1,0 +1,35 @@
+<?php
+define("LAN_400", "Current Photo Albums");
+define("LAN_401", "Delete Album");
+define("LAN_402", "Edit Photo Album");
+define("LAN_403", "Add Photo Album");
+define("LAN_404", "ID");
+define("LAN_405", "Title");
+define("LAN_406", "Thumb");
+define("LAN_407", "Images");
+define("LAN_408", "Order");
+define("LAN_409", "Options");
+define("LAN_410", "Info");
+define("LAN_411", "Image");
+define("LAN_412", "Delete");
+define("LAN_413", "Enter");
+define("LAN_414", "Save Album");
+define("LAN_415", "Cancel");
+define("LAN_416", "current order:");
+define("LAN_417", "leave blank to set last in order");
+define("LAN_418", "Loading Image...");
+define("LAN_419", "Image will be scaled to %uw x %uh pixels");
+define("LAN_420", "Photo Album Error");
+define("LAN_421", "Error");
+define("LAN_422", "Album Cannot be Deleted");
+define("LAN_423", "There are Photos in this Album.");
+define("LAN_424", "Album Title already in use.");
+define("LAN_425", "Image must be less than %u bytes.");
+define("LAN_426", "Invalid Image File.");
+define("LAN_427", "Image must be a JPEG Image File.");
+define("LAN_428", "Image must be less than %uw x %uh pixels.");
+define("LAN_429", "Return to Photo Album Admin");
+define("LAN_430", "Return to Admin Index");
+define("LAN_431", "No Photo Albums defined.");
+define("LAN_432", "None");
+?>

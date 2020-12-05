@@ -1,0 +1,35 @@
+<?php
+define("LAN_400", "Aktuelle fotoalbums");
+define("LAN_401", "Slet album");
+define("LAN_402", "Rediger fotoalbum");
+define("LAN_403", "Tilføj fotoalbum");
+define("LAN_404", "ID");
+define("LAN_405", "Overskrift");
+define("LAN_406", "Ikon");
+define("LAN_407", "Billeder");
+define("LAN_408", "Placering");
+define("LAN_409", "Valgmuligheder");
+define("LAN_410", "Introduktion");
+define("LAN_411", "Ikon");
+define("LAN_412", "Slet");
+define("LAN_413", "Indsæt billede");
+define("LAN_414", "Gem album");
+define("LAN_415", "Fortryd");
+define("LAN_416", "aktuel placering:");
+define("LAN_417", "lad dette stå blankt for at anbringe ikonet sidst i rækken");
+define("LAN_418", "Indlæser billede...");
+define("LAN_419", "Ikonet vil blive gemt i størrelsen %u(Bredde) x %u(Højde) pixels");
+define("LAN_420", "Fejl i album");
+define("LAN_421", "Fejl");
+define("LAN_422", "Albummet kan ikke slettes");
+define("LAN_423", "Der er stadigvæk billeder i dette album.");
+define("LAN_424", "Albumoverskriften bruges allerede.");
+define("LAN_425", "Billedet skal være mindre end %u bytes.");
+define("LAN_426", "Billedfilen er ikke anvendelig.");
+define("LAN_427", "Billedet skal være i JPEG-formatet.");
+define("LAN_428", "Billedet skal være mindre end %u(Bredde) x %u(Højde) pixels.");
+define("LAN_429", "Vend tilbage til albumadministration");
+define("LAN_430", "Vend tilbage til administrationspanel");
+define("LAN_431", "Der er ikke oprettet albums.");
+define("LAN_432", "Ingen");
+?>

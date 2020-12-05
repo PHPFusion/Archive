@@ -1,0 +1,35 @@
+<?php
+define("LAN_400", "Huidige Foto Albums");
+define("LAN_401", "Verwijder Album");
+define("LAN_402", "Bewerk Foto Album");
+define("LAN_403", "Voeg Foto Album toe");
+define("LAN_404", "ID");
+define("LAN_405", "Titel");
+define("LAN_406", "Thumb");
+define("LAN_407", "Plaatjes");
+define("LAN_408", "Rang");
+define("LAN_409", "Opties");
+define("LAN_410", "Info");
+define("LAN_411", "Plaatje");
+define("LAN_412", "Verwijder");
+define("LAN_413", "Enter");
+define("LAN_414", "Sla Album op");
+define("LAN_415", "Cancel");
+define("LAN_416", "Rangschikking:");
+define("LAN_417", "Laat leeg om de laatste in de rangschikking in te stellen");
+define("LAN_418", "Bezig met laden...");
+define("LAN_419", "Het plaatje wordt %uw x %uh pixels groot");
+define("LAN_420", "Foto Album Error");
+define("LAN_421", "Error");
+define("LAN_422", "Album kan niet verwijderd worden");
+define("LAN_423", "Er zitten Foto's in dit Album.");
+define("LAN_424", "Album Titel is al in gebruik.");
+define("LAN_425", "Plaatje moet kleiner dan %u bytes zijn.");
+define("LAN_426", "Ongeldig Bestand.");
+define("LAN_427", "Plaatje moet een JPEG bestand zijn.");
+define("LAN_428", "Plaatje moet kleiner dan %u bytes zijn.");
+define("LAN_429", "Keer terug naar Foto Album Admin");
+define("LAN_430", "Keer terug naar Admin Index");
+define("LAN_431", "Geen Foto Albums gedefineerd.");
+define("LAN_432", "Geen");
+?>

@@ -1,0 +1,30 @@
+<?php
+define("LAN_400", "Fotoalbum");
+define("LAN_401", "Tomt fotoalbum");
+define("LAN_402", "Senaste: ");
+define("LAN_403", " Bild");
+define("LAN_404", " Bilder");
+define("LAN_405", "Laddar bild...");
+define("LAN_406", "[Uppdaterad]");
+define("LAN_407", "Det finns inga fotoalbum upprättade");
+define("LAN_408", "Album: ");
+define("LAN_409", "Antal bilder: ");
+define("LAN_410", "Senaste bild tillfogad den");
+define("LAN_411", " av ");
+define("LAN_412", "Ingen");
+define("LAN_413", "Innehåll fotoalbum");
+define("LAN_414", "Antal visningar: ");
+define("LAN_415", "Inga kommentarer");
+define("LAN_416", "Kommentar");
+define("LAN_417", "Kommentarer");
+define("LAN_418", "Det finns inga bilder i detta fotoalbum.");
+define("LAN_419", "Foto: ");
+define("LAN_420", "Storlek: ");
+define("LAN_421", " pixlar ");
+define("LAN_422", "Bild tillfogad av");
+define("LAN_423", " den ");
+define("LAN_424", "Bilden har visats");
+define("LAN_425", " gånger");
+define("LAN_426", "Tillbaka till fotoalbumen");
+define("LAN_427", "Tillbaka till fotogalleriet");
+?>

@@ -1,0 +1,331 @@
+PHP-Fusion X2 Update Log
+
+23.10.2003
+• Removed cell-padding from subheader.
+
+24.10.2003
+• Fixed Extended News submission, When a Submitted News item was published the extended news was not saved.
+• Further optimised the CSS for each theme, this new format will be used for all future themes.
+• Adjusted some of the text formatting in Poll, Latest/Hottest Threads and User Info.
+• Fixed Email validation to allow underscores before and/or after the ampersand.
+
+25.10.2003
+• Fixed a new bug where Extended News was not visible from the Submissions Admin Panel.
+• Fixed Email validation to allow periods before and/or after the ampersand.
+• Fixed Contact Me form mail to correctly show the senders name.
+
+26.10.2003
+• Fixed the Private Message link on the Contact Me page.
+• Fixed the To field on the Send Message page, appeared blank when sending a new message.
+• Added Short Date Format, Long Date Format and Time Offset options to Settings.
+• Replaced Visitor Shoutbox Posts and Visitor Comment Posts with Allow Guests to Post.
+• Added shortdate, longdate and timeoffset columns to settings database table.
+• Replaced visitorshoutbox Posts and visitorcomments with guestposts in settings database table.
+• Phased out use of gmdate() for time/date formatting. Switched over to more versatile strftime().
+
+27.10.2003
+• Fixed Recieved date on Read Message page.
+• Coded the upgrade.php file for Revision #1 release.
+
+28.10.2003
+• Adjusted forum htmlentities encoding command to prevent smileys appearing unexpectedly
+• Added missing sublink_description column to submitted_links table.
+• Changed the following smiley code: :o = :o:, :p = :p:, :D = :D: & :u = :u:
+
+30.10.2003
+• Fixed Image insert button for main news on Admin News page.
+
+31.10.2003
+• Fixed Poll admin page to display Vote Count, Start Date and End Date.
+• Improvemed Admin Index page. Now displays useful information
+including Registered Members, Submissions, and Comments/Shoutbox/Forum posts.
+• Cleaned up the Users Online display to make it a little simpler.
+
+03.11.2003
+• Scrapped 'Red Sky' theme.
+• Adjusted some aspects of 'Eternal Darkness' theme.
+• Created new theme entitled 'Enigma'.
+• Fixed poll deletion routine, corresponding poll_votes are now deleted.
+• Removed Paypal from left-hand column.
+• Removed IRC Server info from right-hand column.
+
+04.11.2003
+• Created new theme entitled 'Revolution'.
+• Fixed date display on Shoutbox Archive page.
+• Fixed Java script on Articles admin page (Bold button was not working).
+• Enhanced Shoutbox, if the postee is a member their name will appear as a link to their profile.
+
+07.11.2003
+• Fixed Guest Posting on Shoutbox and Article/News Comments.
+• Enhanced Comments, if the postee is a member their name will appear as a link to their profile.
+
+16.11.2003
+• Fixed SQL command to delete forums on Forums Admin Page.
+• Implemented new Forum box to show New Threads and/or Latest Updated Threads.
+• Added forumdate and numofthreads columns to settings database table.
+• Added Forum Date Format, Number of Forum Threads and Prune Forum Threads options to Admin Settings page.
+
+18.11.2003
+• Added database table prefix option (major core update).
+
+19.11.2003
+• Added Article Categories, Articles are now categorised like Downloads & Web Links.
+• Added article_cats database table to support above mentioned new feature.
+• Fixed Add New Article SQL command in Admin.
+
+21.11.2003
+• Completed second major theme engine overhaul introducing first theme entitled 'Luna'.
+
+23.11.2003
+• Added pagination to Downloads sub-pages.
+
+24.11.2003
+• Fine tuned Luna theme.
+• Changed some CSS style names for easier modification.
+• Moved Post Reply & Post New Thread buttons to the inside of the Forum/Thread tables.
+• Moved Forum Options onto Settings Page.
+• Added Forum Panels option to Settings, allows you to select which forum panel to
+display, i.e. the sidebar or center panel. Both can also be displayed.
+• Tweaked the layout of the Admin Settings Page.
+• Added code to sidebar.php & index.php to accommodate above mention Forum Panels setting.
+• Prepared upgrade script for release.
+
+25.11.2003
+• Fixed slash-stripping in Add Option routine in Polls Admin Panel.
+• Completed work on Forum Pruning script.
+• Cleaned up Admin Index.
+• Added pagination to Web Links sub-pages.
+
+27.11.2003
+• Removed Donate section from sidebar.php
+• Fixed UBB code buttons in Members Management Admin Panel.
+
+28.11.2003
+• Completed new theme entitled 'sunset'.
+
+02.12.2003
+• Added new pages to Articles, Downloads and Web Links in Admin Panel to warn user when no Categories have been defined.
+• Added Display Poll option to Settings - enables Polls to be visible or invisible.
+• Added Number of Shoutbox Posts to settings - sets how many posts are displayed.
+• Added Polls Archive so visitors can view previous Polls.
+
+03.12.2003
+• Created a new theme entitled 'republic'.
+
+05.12.2003
+• Fixed slashstripping in View Thread caption.
+
+07.12.2003
+• Cleaned up Forum code a little.
+• Show My Signature is now ticked is now ticked as default option.
+
+08.12.2003
+• Added optional profile fields to registration form including: location, icq, msn, yahoo and signature.
+• Fixed minor mistake in msn verification code.
+
+11.12.2003
+• Created a new theme entitled 'lithium'.
+
+12.12.2003
+• Added profile option to show/hide email address, this can be set on the registration page, on the edit profile page, and on the edit member admin page.
+• Added user_hide_email column to users database table to support the above new feature.
+• Altered the updateuser routines.
+• Added Email Address to profiles, if member has opted to hide their address it will not be shown.
+• Moved Joined information to bottom of profile.
+• Added Last Visit information to profile.
+
+20.12.2003
+• Completed forum restructurinng reducing css down to 4 elements to enable easier modification for new themes.
+
+24.12.2003
+• Forum attachment feature added.
+• Added 3 new options to Settings: Attachments Enabled, Attachment Max Size and Allowed File Types.
+• Added attachments, attchmax & attachtypes columns to Settings database table.
+
+28.12.2003
+• Added Avatar feature to Profiles, a Member can add/remove their Avatar from the Edit Profile page.
+• Added code to updateuser.php to add/remove an Avatar image to a members profile. Avatar images are stored in a root folder named avatars.
+• Added user_avatar column to Users database table.
+• Fixed a mistake in the registration code.
+
+30.12.2003
+• Introduced Mod Levels, 1 = Super Administrator, 2 = Administrator, 3 = Moderator & 4 = Member.
+• Added getmodlevel() function to classes.php.
+• Altered user_mod database column to tinyint(1) in Users database table.
+
+01.01.2004
+• Added new options to theme.php: body_text, body_bg, body_margin, table_width and table_border.
+• Added three new functions to theme.php: render_news, render_morenews and render_article.
+• Created new theme entitled 'x3'.
+
+02.01.2004
+• Altered Forumlist layout.
+
+03.01.2004
+• Altered upload routines to prevent possible problems with certain server restrictions.
+• Updated all X2 themes to include new X3 options.
+
+04.01.2004
+• Created new look Profile which now displays a member's avatar (if one has been uploaded).
+
+07.01.2004
+• Added Admin Panel with fewer options for Level 2 Administrator.
+• Modified Member Management panel to prevent an Administrator from promoting themselves to Super Administrator.
+
+08.01.2004
+• Updated install.php script to include new PHP-Fusion X3 database settings.
+• Prepared the upgrade.php script to upgrade PHP-Fusion X2 SE to PHP-Fusion X3.
+
+10.01.2004
+• Added code to postnewthread.php & postreply.php to hide attachment option if attachments are turned off in the Admin Panel.
+
+11.01.2004
+• Added n-pulse theme to X3 distribution zip.
+
+------------------- X3 RV2 -------------------
+
+13.01.2004
+• Added Last User name to Latest Forum posts list.
+• Modified forum post (newthread, reply, edit) UBB insert code to allow addition of new UBB code.
+
+15.01.2004
+• Corrected an error in postedit.php to re-enable Delete This Thread nd Lock This Thread options for Admins & Mods.
+• Corrected an error in postnewthread.php to re-enable Make this Thread Sticky option for Admins & Mods.
+• Added Font Color UBB Code support to Forums.
+
+16.01.2004
+• Added x2_basedir defined basedir prefix to internal site links.
+
+17.01.2004
+• Added "Quote" Reply feature to Forum Posts.
+
+25.02.2004
+• Moved Shoutbox Post routine into header.php to resolve two critical issues.
+• Fixed Italic bbcode insert button in Forums.
+
+26.02.2004
+• Created new theme entitled 'Innovated'.
+
+02.03.2004
+• Added an extra line of code to headers to close a potential security hole.
+• Downloads title replaced with Web Links title Web Links page.
+
+03.03.2004
+• Fixed a number of minor spelling mistakes.
+
+04.03.2004
+• Added code to includes/classes.php to enable PHP-Fusion to work with register_globals set to Off.
+
+------------------- X3 RV3 -------------------
+
+05.03.2004
+• Began Multi-Language implementation.
+• global.php covers: navigation.php, sidebar.php, news.php, userinfo.php, poll.php, shoutbox.php, footer.php.
+• Changed the name of definitions x2_root, x2_basedir & x2_themepath to x_root, x_basedir & x_themedir.
+• Moved x_themedir definition from theme.php files to header.php files.
+• Added new x_langdir definition to header.php files ready for multi-language implementation.
+• Added pagination to Members List.
+
+06.03.2004
+• admin_main.php language file created, covers admin/index.php.
+• admin_news-articles.php language file created, covers admin/news.php, admin/article_cats.php & admin/articles.php.
+• admin_polls.php language file created, covers admin/polls.php.
+
+07.03.2004
+• admin_forums.php language file created, covers admin/forums.php.
+• admin_sitelinks.php language file created, covers admin/sitelinks.php.
+• admin_weblinks.php language file created, covers admin/weblink_cats.php & admin/weblinks.php.
+• admin_downloads.php language file created, covers admin/download_cats.php & admin/downloads.php.
+• admin_shoutbox.php language file created, covers admin/shoutbox.php.
+
+08.03.2004
+• admin_submissions.php language file created, covers admin/submissions.php.
+• Reversed order of Moderator levels for easier management, 0 = Member, 1 = Moderator, 2 = Admin, 3 = Super Admin.
+
+09.03.2004
+• admin_members.php language file created, covers admin/members.php.
+• Typo spotted and fixed, Admininistrator corrected to Administrator (also applies to Super Administrator).
+• admin/admin_image_uploads.php language file created, covers admin/image_uploads.php.
+• admin/admin_settings.php language file created, covers admin/settings.php.
+
+10.03.2004
+• comments.php language file created, covers articlecomments.php & readmore.php.
+• Added missing code to articlecomments.php to display post users name correctly.
+• Fixed article comment count increment SQL call
+• Fixed some incorrect messages in articles.php.
+• articles.php language file created, covers articles.php.
+• contact.php language file created, covers contact.php.
+• Updated the contact.php code and fixed some rendering issues.
+• Fixed thread lock function in postedit.php.
+• Fixed problem in viewthread.php which failed to remove the quote button from a locked thread.
+• Fixed online users code in header.php to show correct amount of guests online.
+
+11.03.2004
+• Changed the name of the variable $x2_prefix to $phpfusion_prefix.
+• Changed the name of definitions x2_root, x2_basedir, x2_themepath and x2_langdir to fusion_root, fusion_basedir, fusion_themedir & fusion_langdir.
+• editprofile.php language file created, covers editprofile.php & includes/update_profile.php.
+• Fixed update success/error message display in editprofile.php
+
+12.03.2004
+• lostpassword.php language file created, covers lostpassword.php.
+• members-profile.php language file created, covers memberss.php & profile.php.
+
+14.03.2004
+• messages.php language file created, covers messages.php, readmessage.php & sendmessage.php.
+
+15.03.2004
+• downloads.php language file created, covers downloads.php.
+• weblinks.php language file created, covers weblinks.php.
+• Adjusted table rendering code on main page of articles.php, downloads.php & weblinks.php
+
+16.03.2004
+• register.php language file created, covers register.php.
+
+17.03.2004
+• Modified globals.php language file to cover polls_archive.php & shoutbox_archive.php.
+
+19.03.2004
+• Reorganised Forum code to make room for future updates.
+• Moved Forum information from the Forum title bar to left of Post Reply/Post New Thread buttons.
+• Altered titles on Edit Post, Post Reply & Post New Thread pages.
+• Sticky threads now only appear on the first page of the Forum.
+• Moved Next/Prev bars to top & bottom of View Forum and View Thread Page.
+
+21.03.2004
+• submitnews.php language file created, covers submitnews.php.
+• submitlink.php language file created, covers submitlink.php.
+
+22.03.2004
+• htmlentities function replaced with new stripinput (custom class) function, this will improve the ability to
+support eastern languages such as Chinese better.
+• forum_main.php language file created, covers forum/index.php, forum/viewforum.php & forum/viewthread.php.
+
+23.03.2004
+• Administrators and Moderators can now unlock any locked threads from Edit Post page.
+• forum_post.php language file created, covers forum/postnewthread.php, forum/postreply.php & forum/postedit.php.
+• Added code to delete Article/News comments relating to any deleted Article or News Item.
+
+24.03.2004
+• Split classes.php into two files. classes controls compatability & database functions.
+• classes2.php controls general functions such as moderator levels, bbcode, smileys & input control functions.
+• install.php updated ready to install PHP-Fusion X3 RV3.
+• install.php language file created, covers install.php.
+• Fixed bug in viewthread.php to show the correct user who edited any posts.
+
+25.03.2004
+• Restructured themes innovated, lithium, luna, n-pulse, republic, sunset and x3 to fix minor rendering problems.
+• Images in News items no longer disturb the position of the news footer.
+
+26.03.2004
+• Wrote and successfully tested upgrade.php script to upgrade PHP-Fusion RV2 to RV3.
+
+27.03.2004
+• Added code to shoutbox post routine to split words longer than 20 characters by using line breaks.
+• Fixed Send PM button in viewthread.php, thanks to phpbuddy for the heads up.
+• Changed smiley codes :o:, :p:, :d: & :u: to :o, :p, :d & :@ respectively.
+
+29.03.2004
+• Changed timeoffset column in settings database table from smallint to varchar to fix timezone problems.
+• Added dummy index.php files to folders which have no page content, e.g images, includes, avatars etc.
+• Added Danish language files produced by Jan Moeldgaard.
+• Finalised RV3 full install and upgrade packages.

@@ -1,0 +1,263 @@
+.white-header {
+	font:normal 11px verdana,tahoma,arial,sans-serif;
+	color:#fff;background:#245375;
+	padding:4px 4px 5px 4px;
+	border-top:#000 1px solid;
+	border-bottom:#000 1px solid;
+}
+
+.full-header {
+	font:10px verdana,tahoma,arial,sans-serif;
+	color:#ddd;background:#346385;
+}
+
+.button {
+	font:9px verdana,tahoma,arial,sans-serif;
+	color:#000;background:#f4f4f4;
+	height:19px;
+	border:1px #000 solid;margin-top:2px;
+}
+	
+.textbox {
+	font:10px verdana,arial;
+	color:#000;background:#ffffef;
+	border:1px #245375 solid;
+}
+
+.body {
+	font:11px verdana,tahoma,arial,sans-serif;
+	color:#000;background:#e4e4e4;
+	padding:3px 4px 3px 4px;
+}
+
+.sbody {
+	font:10px;
+	color:#000;
+	padding:4px 4px 6px 4px;
+}
+
+.bodybg {
+	background:#e4e4e4;
+	padding:4px;
+}
+
+.border {
+	border-width:0px 1px 1px 1px;border-color:#485f5c;border-style:solid;
+}
+
+.slborder {
+	background:#d4d4d4;
+	border-right:1px #aaa solid;
+	padding:4px;
+}
+
+.srborder {
+	background:#d4d4d4;
+	border-left:1px #aaa solid;
+	padding:4px;
+}
+
+.barleft {
+	width:5px;height:21px;
+	background-image:url(images/barleft.gif);
+}
+
+.barmain {
+	font:10px verdana,tahoma,arial,sans-serif;
+	color:#fff;background:#245375;
+	height:21px;
+	background-image:url(images/barmain.gif);background-repeat:repeat-x;
+	padding:3px 4px 4px 4px;
+}
+
+.barright {
+	width:5px;height:21px;
+	background-image:url(images/barright.gif);
+}
+
+.newscapleft {
+	width:5px;height:38px;
+	background-image:url(images/newscapleft.gif);
+}
+
+.newscapmain {
+	font:11px verdana,tahoma,arial,sans-serif;
+	color:#fff;background:#245375;
+	height:38px;
+	background-image:url(images/newscapmain.gif);background-repeat:repeat-x;
+	padding:4px 2px 6px 2px;
+}
+
+.newscapright {
+	width:5px;height:38px;
+	background-image:url(images/newscapright.gif);
+}
+
+.capleft {
+	width:5px;height:26px;
+	background-image:url(images/capleft.gif);
+}
+
+.capmain {
+	font:11px verdana,tahoma,arial,sans-serif;
+	color:#fff;background:#245375;
+	height:26px;
+	background-image:url(images/capmain.gif);background-repeat:repeat-x;
+	padding:4px 2px 6px 2px;
+}
+
+.capright {
+	width:5px;height:26px;
+	background-image:url(images/capright.gif);
+}
+
+.scapleft {
+	width:5px;height:26px;
+	background-image:url(images/capleft.gif);
+}
+
+.scapmain {
+	font:11px verdana,tahoma,arial,sans-serif;
+	color:#fff;background:#245375;
+	height:26px;
+	background-image:url(images/capmain.gif);background-repeat:repeat-x;
+	padding:4px 2px 6px 2px;
+}
+
+.scapright {
+	width:5px;height:26px;
+	background-image:url(images/capright.gif);
+}
+
+.forum-border {
+	background:#aaa;
+}
+	
+.forum-caption {
+	font:11px;
+	color:#fff;background:#245375;
+	padding:4px 4px 6px 4px;
+}
+
+.quote {
+	font:11px;
+	color:#000;background:#eee;
+	padding:2px;
+	margin:0px 20px 0px 20px;
+	border:1px #ccc solid;
+}
+
+.forum1 {
+	font:11px;
+	color:#000;background:#e4e4e4;
+	padding:4px;
+}
+
+.forum2 {
+	font:11px;
+	color:#000;background:#d4d4d4;
+	padding:4px;
+}
+	
+.poll {
+	background:#245375;
+	height:12px;
+	border:1px #000 solid;
+}
+
+.shoutboxname {
+	color:#0a246a;
+}
+
+.shoutbox {
+	color:#666;
+}
+
+.shoutboxdate {
+	font:10px;
+	color:#245375;
+	text-align:right;
+}
+
+.alt {
+	color:#245375;
+}
+
+.altbg {
+	font:bold 10px verdana,tahoma,arial,sans-serif;
+	color:#000;background:#d4d4d4;
+	padding:4px;
+}
+
+.small {
+	font:normal 10px;
+}
+
+.small2 {
+	font:normal 10px;color:#245375;
+}
+
+a {
+	color:#245375;background:transparent;
+	text-decoration:none;
+}
+
+a:hover {
+	color:#eee;background:#245375;
+	text-decoration:none;
+}
+
+a.slink {
+	color:#245375;background:transparent;
+	text-decoration:none;
+}
+
+a:hover.slink {
+	color:#eee;background:#245375;
+	text-decoration:none;
+}
+
+a.white {
+	color:#fff;
+	text-decoration:none;
+}
+
+a:hover.white {
+	color:#fff;
+	text-decoration:underline;
+}
+
+a.foot {
+	color:#d0d0ff;background:transparent;
+	text-decoration:none;
+}
+
+a:hover.foot {
+	color:#346385;background:#d0d0ff;
+	text-decoration:none;
+}
+
+body {
+	font:11px verdana,tahoma,arial,sans-serif;
+}
+
+form {
+	margin:0px 0px 0px 0px;
+}
+
+hr {
+	height:2px;
+	border-bottom:#f4f4f4 1px solid;
+	border-top:#c4c4c4 1px solid;
+}
+
+hr.shr {
+	height:2px;
+	border-bottom:#f4f4f4 1px solid;
+	border-top:#b4b4b4 1px solid;
+}
+
+td {
+	font:11px verdana,tahoma,arial,sans-serif;
+	color:#000;
+}

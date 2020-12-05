@@ -1,0 +1,180 @@
+27.04
+Altered post routines in shoutbox & forum pruning admin options
+Added Remember Me option to Login, cookie will be temporary unless this option is ticked prior to login.
+Added Delete All read messages option to Private Messages.
+
+29.04
+Added simple Forum Search facility, more features tba.
+
+30.04
+Updated forum_search.php to exclude private forums from returned results.
+Altered forum_author column in forums database to smallint(5).
+Altered thread_author and thread_lastuser column in threads database to smallint(5).
+Altered post_author and post_edituser column in posts database to smallint(5).
+Added join criteria to sql call in fusion_forum/index.php.
+Added duplicate & join criteria to sql call in fusion_forum/viewforum.php.
+Added join criteria to sql call in fusion_forum/viewthread.php.
+Added join criteria to sql call in fusion_forum/postedit.php
+Altered message_from column in messages database to smallint(5).
+Altered message_to column in messages database to smallint(5).
+Added join criteria to sql call in messages.php.
+Added join criteria to sql call in readmessage.php.
+Added join criteria to sql call in sendmessage.php.
+
+01.05
+Added CrappoMan's modified sitelinks.php code.
+Replaced MOD0, MOD1, MOD2 & MOD3 with USER0, USER1, USER2, USER3 & USER4.
+USER0 = Public, USER1 = Member, USER2 = Moderator, USER3 = Admin & USER4 = Super Admin.
+
+04.05
+Added Database Backup/Restore Admin Panel (Coded by CrappoMan).
+Added .php file extension to custom page filenames for improved FTP compatibility.
+Added Access options to Custom Pages Admin Panel.
+Updated Custom Page to show page to defined access level.
+Version number displayed in footer.php is now extracted from database.
+Added fusion.js file to fusion_core, will store any javascripts for future expansion.
+
+05.05
+Added Expandable/Collapsable Categories to Web Links & Download Admin Pages (Javascript by CrappoMan).
+LAN_82 (Members Only) definition in global.php moved to LAN_03.
+Added Theme & Language options to editprofile.php.
+Added user_theme and user_language colums to users database table.
+Inserted Theme & Language definitions into editprofile.php language file (LAN_222 & LAN_223).
+
+06.05
+Theme & Language lists in editprofile.php now shown in alphabetical order.
+Theme & Language lists in admin/settings.php now shown in alphabetical order.
+Image list in admin/image_uploads.php now shown in alphabetical order.
+Discontinued innovated and republic themes.
+Added Last Seen Users Sidebar Panel (Coded by CrappoMan).
+
+07.05
+Altered style class in Last Seen Users panel.
+Altered timing in Users Online code.
+Dropped online_id primary key from online database table.
+
+09.05
+Forum images now stored in the themes/currenttheme/forum folder.
+Added blockquote tags to improve rendering of [code] bbcode.
+Added code & quote buttons to postedit.php, postnewthread.php & postreply.php.
+Increased textarea width & height in postedit.php, postnewthread.php & postreply.php.
+
+10.05
+Added pagination to Member Management list in Admin Panel.
+Added Theme, Language and Avatar settings to Member Management Edit User feature in Admin Panel.
+Altered code in articles.php to preserve selected Category during Preview.
+
+11.05
+Improved functionality of Downloads and Web Links Admin Panels.
+Improved Member Mangement provides easier ban control and member removal.
+
+12.05
+Improved functionality of Download Categories & Weblink Categories Admin Panels.
+Dropped PHP Info from Admin Panel due to security/privacy concerns.
+Replaced 'PHP Info' with 'Database Backup' in LAN_157 of admin/admin_main.php languague file.
+
+13.05
+Added Comments Management Admin Panel.
+Started development of Panel Manager Admin Panel, used for organising, adding and adding sidebar items.
+
+14.05
+Created admin/admin_comments.php language file.
+
+15.05
+Resolved a few minor issues in db_backup.php (CrappoMan).
+Fixed modulus code in Downloads and Weblinks Pages.
+Admin Panel items now displayed in alphabetical order.
+Added 'secure' PHP Info page which utilises PHP-Fusion's header.php.
+Created admin/admin_db-backup.php language file.
+
+16.05
+Improved Admin Panel security.
+Revamped admin/admin-main.php language file.
+
+17.05
+Fixed Contact Me e-mail headers to resolve bouncing message problem.
+
+18.05
+Added new functions opensidex() and closesidex() to theme.php files.
+Completed development of Panel Management and Panel Editor Admin Panels.
+Added missing line define("LAN_82", "You Must Login to Vote"); to global.php language file.
+
+19.05
+Created two new inclusion files, side_left.php & side_right.php which control the display of the left & right sidebars in accordance with the panels database table entries.
+Removed navigation.php, polls.php, shoutbox.php, sidebar.php and userinfo.php files from root folder.
+
+20.05
+Changed language definition numbers 2xx to 4xx, 3xx to 5xx etc to make room for future global definition additions.
+
+21.05
+Replaced Language option with Time Offset option in editprofile.php.
+Changed Forum Threads/Posts Panels setting to Latest Active Forum Threads Panel, options are now On or Off.
+Removed Display Poll setting from Settings.
+
+22.05
+Added chmod 0644 lines after attachment/avatar uploads and custom pages/side panel file creation.
+Changed New Password and Repeat New Password text fields to password fields in editprofile.php.
+Added maintenance field to settings database table.
+
+23.05
+Fixed text input fields incorrectly defined as textbox.
+Moved form tags to outside of table tags.
+Completed minor rewrite of Panel Management, now supports php files or stores php code in database.
+Improved display of shouts in shoutbox_archive.php.
+Updated Shoutbox Admin save routine to mirror updated main shoutbox post routine.
+Tightened security of panel files, no longer accessible directly.
+
+24.05
+Created admin/admin_panels.php language file (covers both admin/panels.php & admin/panel_editor.php).
+
+26.05
+Updated postnewthread.php post routine to increase forum post count by 1.
+Added Move Thread option to view thread page for Moderators and above.
+
+27.05
+Prepped v4.00 beta install.php and upgrade.php scripts.
+Moved global.php language file require line to header.php to give multi-lingual support to classes2.php.
+Introduced new makePageNav function written by Crappoman. Currently applied to viewforum.php and viewthread.php.
+
+28.05
+Improved functionality of makePageNav function a little.
+Added new page navigation to members.php, news.php, readarticle.php (if paginated) and shoutbox_archive.php.
+Added new page navigation to fusion_admin/members.php.
+
+29.05
+Added new page navigation to articlecomments.php, download.php, guestbook.php & weblinks.php.
+Added new page navigation to fusion_admin/shoutbox.php.
+Removed redundant NextPrevBar function from theme.php files.
+Security fix: Added code to shoutbox.php to prevent blank usernames appearing in posts.
+
+30.05
+Fixed article submission form and fusion_admin/submissions.php.
+
+31.05
+Added auto-ordering to Forum Admin Panel, similar theory to Site Links auto-ordering.
+
+01.06
+Altered makePageNav function to render in a table.
+Added parameter to opensidex function in theme.php, collapsable side tables can be open or closed after page load/refresh.
+
+02.06
+Removed margin-left and margin-top attributes from body tag.
+Dropped $body_margin setting from theme.php.
+
+04.06
+Added Moderator Options (Delete Thread, Lock/Unlock Thread, Make Thread Sticky/Non-Sticky & Move Thread) to viewthread.php. Accessible to Moderators & above.
+Removed Delete Thread & Lock/Unlock Thread options from postedit.php.
+Added bbcode support to Private Messages.
+Added Disable smileys in this message option to Send Private Message form.
+
+05.06
+Added several new functions to classes2.php: Guest(), Member(), Moderator(), Admin(), SuperAdmin() and UserLevel().
+
+06.06
+Added 'pre' css class to styles.css in each theme.
+
+10.06
+Added new code to prevent mallicious use of javascript in ubbcode.
+
+14.06
+Added new function encscript() to prevent mallicious use of script & javascript in Submit News & Submit Articles.

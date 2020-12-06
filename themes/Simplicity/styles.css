@@ -1,0 +1,137 @@
+a { color:#356481; text-decoration:none; }
+a:hover { color:#356481; text-decoration:underline; }
+
+a.side { color:#356481; text-decoration:none; }
+a:hover.side { color:#356481; text-decoration:underline; }
+
+a.white { color:#ccc; text-decoration:none; }
+a:hover.white { color:#ccc; text-decoration:underline; }
+
+body {
+	font-family:"trebuchet ms",Verdana,Tahoma,Arial,Sans-Serif;
+	font-size:12px;
+	margin:10px;
+}
+
+form { margin:0px 0px 0px 0px; }
+
+hr { height:2px; border-bottom:#fff 1px solid; border-top:#c6c7c9 1px solid; }
+hr.side-hr { height:2px; border-bottom:#d4dcdf 1px solid; border-top:#b4bcbf 1px solid; }
+
+td { font-family:"trebuchet ms",Verdana,Tahoma,Arial,Sans-Serif; font-size:11px; }
+
+pre { font-family:Verdana,Tahoma,Arial,Sans-Serif; font-size:10px; }
+
+.alt { color:#555; }
+
+.white-header {
+	font-family:"trebuchet ms",Verdana,Tahoma,Arial,Sans-Serif;
+	font-size:11px;
+	color:#000; background-color:#f1f2f4;
+	padding:4px 4px 4px 4px;
+}
+
+.full-header {
+	font-family:"trebuchet ms",Verdana,Tahoma,Arial,Sans-Serif;
+	font-size:11px;
+	color:#000; background-color:#c4cccf;
+	border:1px #000 solid;
+	padding:5px;
+}
+
+.button {
+	font-family:"trebuchet ms",Tahoma,Arial,Verdana,Sans-Serif;
+	font-size:11px;
+	color:#000; background-color:#ddd;
+	height:20px;
+	border:1px #617d8f solid; margin-top:2px;
+}
+	
+.textbox {
+	font-family:"trebuchet ms",Verdana,Tahoma,Arial,Sans-Serif;
+	font-size:11px;
+	color:#000; background-color:#fff;
+	border:1px #617d8f solid;
+}
+
+.main-body {
+	font-size:11px;
+	color:#000;background-color:#f1f2f4;
+	padding:4px 4px 5px 4px;
+}
+
+.side-body {
+	font-size:11px;
+	color:#516d7f; background-color:#c4cccf;
+	padding:4px;
+}
+
+.main-bg { background-color:#f1f2f4; padding:0px 0px 5px 0px; }
+
+.border { border:1px #000 solid; }
+
+.side-border-left { padding:0px 10px 0px 0px; }
+.side-border-right { padding:0px 0px 0px 10px; }
+
+.news-footer {
+	font-size:10px;
+	color:#555;
+	padding:3px 4px 4px 4px;
+}
+
+.barmain {
+	font-family:Verdana,Tahoma,Arial,Sans-Serif;
+	font-size:10px;
+	color:#aaa;
+	padding:4px 4px 4px 4px;
+}
+
+.capmain {
+	font-family:Verdana,Tahoma,Arial,Sans-Serif;
+	font-size:11px; font-weight:bold;
+	color:#415d6f; background-color:#c4cccf;
+	padding:2px 4px 4px 4px;
+}
+
+.scapmain {
+	font-family:Verdana,Tahoma,Arial,Sans-Serif;
+	font-size:11px; font-weight:bold;
+	color:#415d6f; background-color:#c4cccf;
+	padding:4px 4px 1px 4px;
+}
+
+.tbl-border { background-color:#d1d2d4; }
+.tbl { font-size:11px; padding:4px; }
+.tbl1 { font-size:11px; color:#000; background-color:#f1f2f4; padding:4px; }
+.tbl2 { font-size:11px; color:#000; background-color:#e1e2e4; padding:4px; }
+	
+.forum-caption {
+	font-size:11px; font-weight:bold;
+	color:#415d6f; background-color:#c4cccf;
+	padding:2px 4px 3px 4px;
+}
+
+.quote {
+	color:#000; background-color:#fff;
+	padding:2px;
+	margin:0px 20px 0px 20px;
+	border:1px #617d8f solid;
+}
+	
+.poll { height:12px; border:1px #000 solid; }
+
+.comment-name {	font-weight:bold; color:#bbb; }
+
+.shoutboxname { font-weight:bold; color:#ccc; }
+.shoutbox { color:#415d8f; }
+.shoutboxdate { font-size:9px; color:#213d6f; }
+
+.small { font-size:11px; font-weight:normal; }
+.small2 { font-size:11px; font-weight:normal; color:#555; }
+.side-small { font-size:11px; font-weight:normal; color:#516d7f; }
+.side-label { background-color:#b6bec2; padding:2px; }
+
+.gallery { padding: 16px 0px 8px 0px; }
+.gallery img { border: 1px solid #ccc; filter: gray; }
+.gallery:hover img { border: 1px solid red; filter: none; }
+img.activegallery { border: 1px solid green; filter: none; }

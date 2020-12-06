@@ -1,0 +1,73 @@
+<?php
+// News
+$locale['400'] = "Redigera nyheter";
+$locale['401'] = "Nyheten är uppdaterad";
+$locale['402'] = "Tillbaka till nyhetsadministrationen";
+$locale['403'] = "Tillbaka till administrationspanelen";
+$locale['404'] = "Publicera nyhet";
+$locale['405'] = "Nyheten är publicerad";
+$locale['406'] = "Radera nyhet";
+$locale['407'] = "Nyheten är raderad";
+$locale['408'] = "Aktuella nyheter";
+$locale['409'] = "Redigera";
+$locale['410'] = "Radera";
+$locale['411'] = "Titel:";
+$locale['412'] = "Nyhet:";
+$locale['413'] = "Utökad text:";
+$locale['414'] = "Publiceringsdatum:";
+$locale['415'] = "Slutdatum";
+$locale['416'] = "(Valfritt)";
+$locale['417'] = " Automatisk radbrytning";
+$locale['418'] = "Förhandsgranska nyhet";
+$locale['419'] = "Spara nyhet";
+$locale['420'] = "- Välj färg -";
+$locale['421'] = "- Välj bild -";
+$locale['422'] = "Visas för:";
+$locale['423'] = "Tillåt kommentarer";
+$locale['424'] = "Tillåt betygsättning";
+// Article Categories
+$locale['450'] = "Radera artikelkategori";
+$locale['451'] = "Artikelkategorin kan inte raderas";
+$locale['452'] = "Kategorin innehåller länkade artiklar";
+$locale['453'] = "Tillbaka till artikeladministrationen";
+$locale['454'] = "Artikelkategorin är raderad";
+$locale['455'] = "Redigera artikelkategori";
+$locale['456'] = "Lägg till artikelkategori";
+$locale['457'] = "Kategorins namn:";
+$locale['458'] = "Beskrivning:";
+$locale['459'] = "Spara kategorin";
+$locale['460'] = "Artikelkategorier";
+$locale['461'] = "Kategori [Klicka för att redigera]";
+$locale['462'] = "Inställningar";
+$locale['463'] = "Radera";
+$locale['464'] = "Det finns inga artikelkategorier definierade";
+$locale['465'] = "Visas för:";
+$locale['466'] = "Åtkomst";
+// Articles
+$locale['500'] = "Redigera artikel";
+$locale['501'] = "Artikeln är uppdaterad";
+$locale['502'] = "Tillbaka till artikeladministrationen";
+$locale['503'] = "Tillbaka till administrationspanelen";
+$locale['504'] = "Publicera artikel";
+$locale['505'] = "Artikeln är publicerad";
+$locale['506'] = "Radera artikel";
+$locale['507'] = "Artikeln är raderad";
+$locale['508'] = "Aktuella artiklar";
+$locale['509'] = "Redigera";
+$locale['510'] = "Radera";
+$locale['511'] = "Kategori:";
+$locale['512'] = "Ämne:";
+$locale['513'] = "Rubrik:";
+$locale['514'] = "Artikel:";
+$locale['515'] = "Förhandsgranska artikel";
+$locale['516'] = "Spara artikel";
+$locale['517'] = "Artiklar";
+$locale['518'] = "Det finns inga artikelkategorier definierade";
+$locale['519'] = "Du måste upprätta minst en artikelkategori innan du kan publicera artiklar ";
+$locale['520'] = "Klicka här";
+$locale['521'] = " för att gå till administrationen av artikelkategorier";
+// Popup Error Messages
+$locale['550'] = "Du måste ange en titel";
+$locale['551'] = "Skall nyheten raderas?";
+$locale['552'] = "Skall artikeln raderas?";
+?>

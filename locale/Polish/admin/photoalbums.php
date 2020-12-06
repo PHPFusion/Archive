@@ -1,0 +1,35 @@
+<?php
+$locale['400'] = "Obecny album";
+$locale['401'] = "Usuñ album";
+$locale['402'] = "Edytuj album";
+$locale['403'] = "Dodaj album";
+$locale['404'] = "ID";
+$locale['405'] = "Tytu³";
+$locale['406'] = "Miniaturka";
+$locale['407'] = "Obrazki";
+$locale['408'] = "Kolejno¶æ";
+$locale['409'] = "Opcje";
+$locale['410'] = "Info";
+$locale['411'] = "Obrazy";
+$locale['412'] = "Usuñ";
+$locale['413'] = "Wejd¼";
+$locale['414'] = "Zapisz album";
+$locale['415'] = "Anuluj";
+$locale['416'] = "Obecna kolejno¶æ";
+$locale['417'] = "Zostaw puste, aby umie¶ciæ na ostatnim miejscu";
+$locale['418'] = "£adowanie obrazu";
+$locale['419'] = "Obraz zostanie przeskalowant do %uw x %uh pikseli";
+$locale['420'] = "B³êdy albumów";
+$locale['421'] = "B³±d";
+$locale['422'] = "Album nie mo¿e byæ skasowany";
+$locale['423'] = "W albumie s± zdjêcia";
+$locale['424'] = "Tytu³ zajêty.";
+$locale['425'] = "Obraz musi byæ mniejszy ni¿ %u bajtów";
+$locale['426'] = "Niepoprawny format Pliku";
+$locale['427'] = "Obraz musi byæ w formacie .jpg.";
+$locale['428'] = "Obraz musi byæ mniejszy ni¿ %uw x %uh pikseli";
+$locale['429'] = "Powrót do menu admina – Albumy";
+$locale['430'] = "Powrót do g³ównego menu amina";
+$locale['431'] = "Brak zdefiniowanych albumów";
+$locale['432'] = "Nic";
+?>

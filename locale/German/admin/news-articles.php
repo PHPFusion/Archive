@@ -1,0 +1,73 @@
+<?php
+// News
+$locale['400'] = "News editieren";
+$locale['401'] = "News Beitrag aktualisiert";
+$locale['402'] = "Zurück zum News Admin";
+$locale['403'] = "Zurück zum Admin Index";
+$locale['404'] = "News hinzufügen";
+$locale['405'] = "News Beitrag hinzugefügt";
+$locale['406'] = "News löschen";
+$locale['407'] = "News Beitrag wurde gelöscht";
+$locale['408'] = "Aktuelle News";
+$locale['409'] = "Editieren";
+$locale['410'] = "Löschen";
+$locale['411'] = "Betreff:";
+$locale['412'] = "News:";
+$locale['413'] = "Erweiterte News:";
+$locale['414'] = "Start Datum:";
+$locale['415'] = "End Datum:";
+$locale['416'] = "(Optional)";
+$locale['417'] = "Automatische Zeilenumbrüche";
+$locale['418'] = "News Vorschau";
+$locale['419'] = "News speichern";
+$locale['420'] = "- Farbe wählen -";
+$locale['421'] = "- Bild wählen -";
+$locale['422'] = "Sichtbarkeit:";
+$locale['423'] = "Kommentare zulassen";
+$locale['424'] = "Bewertung zulassen";
+// Article Categories
+$locale['450'] = "Lösche Arikel Kategorien";
+$locale['451'] = "Artikel Kategorie kann nicht gelöscht werden";
+$locale['452'] = "Es sind Artikel in dieser Kategorie vorhanden";
+$locale['453'] = "Zurück zum Artikel Kategorie Admin";
+$locale['454'] = "Artikel kategorie gelöscht";
+$locale['455'] = "Artikel Kategorie editieren";
+$locale['456'] = "Artikel Kategorie hinzufügen";
+$locale['457'] = "Kategorie Name:";
+$locale['458'] = "Kategorie Beschreibung:";
+$locale['459'] = "Kategorie speichern";
+$locale['460'] = "Artikel Kategorien";
+$locale['461'] = "Kategorie [Klick zum editieren]";
+$locale['462'] = "Optionen";
+$locale['463'] = "Löschen";
+$locale['464'] = "Keine Artikel Kategorien definiert";
+$locale['465'] = "Kategorie Zugang:";
+$locale['466'] = "Zugang";
+// Articles
+$locale['500'] = "Artikel editieren";
+$locale['501'] = "Artikel aktualisiert";
+$locale['502'] = "Zurück zum Artikel Admin";
+$locale['503'] = "Zurück zum Admin Index";
+$locale['504'] = "Artikel hinzufügen";
+$locale['505'] = "Artikel hinzugefügt";
+$locale['506'] = "Artikel löschen";
+$locale['507'] = "Article gelöscht";
+$locale['508'] = "Aktuelle Artikel";
+$locale['509'] = "Editieren";
+$locale['510'] = "Löschen";
+$locale['511'] = "Kategorie:";
+$locale['512'] = "Thema:";
+$locale['513'] = "Auszug:";
+$locale['514'] = "Artikel:";
+$locale['515'] = "Artikel Vorschau";
+$locale['516'] = "Artikel speichern";
+$locale['517'] = "Artikel";
+$locale['518'] = "Es sind keine Artikel-Kategorien definiert";
+$locale['519'] = "Du musst mindestens eine Kategorie definieren, bevor Du einen Artikel hinzufügen kannst";
+$locale['520'] = "Klicke hier";
+$locale['521'] = " um zu den Artikel Kategorien zu gelangen";
+// Popup Error/Warning Messages
+$locale['550'] = "Bitte ein Thema angeben";
+$locale['551'] = "Diese News löschen?";
+$locale['552'] = "Diesen Artikel löschen?";
+?>

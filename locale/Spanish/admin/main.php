@@ -1,0 +1,53 @@
+<?php
+// Admin Links
+$locale['200'] = $settings['sitename']." Panel de Administración";
+$locale['ac01'] = "Administración de Contenidos";
+$locale['ac02'] = "Administración de Usuarios";
+$locale['ac03'] = "Administración del Sistema";
+$locale['ac04'] = "Infusions";
+$locale['201'] = "Administradores";
+$locale['202'] = "Categorías de Artículo";
+$locale['203'] = "Artículos";
+$locale['204'] = "Lista Negra";
+$locale['205'] = "Comentarios";
+$locale['206'] = "Páginas Personalizadas";
+$locale['207'] = "Copia de Seguridad de la Base de Datos";
+$locale['208'] = "Categorías de Descarga";
+$locale['209'] = "Descargas";
+$locale['210'] = "FAQs";
+$locale['211'] = "Foros";
+$locale['212'] = "Imágenes";
+$locale['213'] = "Infusiones";
+$locale['214'] = "Panel de Infusiones";
+$locale['215'] = "Miembros";
+$locale['216'] = "Noticias";
+$locale['217'] = "Paneles";
+$locale['218'] = "Álbum de Fotos";
+$locale['219'] = "Información PHP";
+$locale['220'] = "Encuestas";
+$locale['221'] = "Panel de Notas";
+$locale['222'] = "Enlaces del Sitio";
+$locale['223'] = "Envíos";
+$locale['224'] = "Actualización";
+$locale['225'] = "Grupos de Usuarios";
+$locale['226'] = "Categorías de Enlaces Web";
+$locale['227'] = "Enlaces Web";
+$locale['228'] = "Configuración Principal";
+$locale['229'] = "Configuración de Fecha y Hora";
+$locale['230'] = "Configuración del Foro";
+$locale['231'] = "Configuración del Registro";
+$locale['232'] = "Configuración de la Galería de Fotos";
+$locale['233'] = "Configuraciones Varias";
+$locale['234'] = "Configuración de Mensajes Privados";
+// Site Information
+$locale['250'] = "Información";
+$locale['251'] = "Miembros Registrados:";
+$locale['252'] = "Miembros no activados:";
+$locale['253'] = "Miembros Censurados:";
+$locale['254'] = "Envíos de Noticias no publicados:";
+$locale['255'] = "Envíos de Artículos no publicados:";
+$locale['256'] = "Envíos de Enlaces Web no publicados:";
+$locale['257'] = "Comentarios:";
+$locale['258'] = "Mensajes en el Panel de Notas:";
+$locale['259'] = "Mensajes en Foros:";
+?>

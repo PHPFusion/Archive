@@ -1,0 +1,53 @@
+<?php
+// Admin Links
+$locale['200'] = $settings['sitename']." Admin Panel";
+$locale['ac01'] = "Content Admin";
+$locale['ac02'] = "Benutzer Admin";
+$locale['ac03'] = "System Admin";
+$locale['ac04'] = "Infusionen";
+$locale['201'] = "Administratoren";
+$locale['202'] = "Artkel Kategorien";
+$locale['203'] = "Artikel";
+$locale['204'] = "Blacklist";
+$locale['205'] = "Kommentare";
+$locale['206'] = "Eigene Seiten";
+$locale['207'] = "Datenbank Sicherung";
+$locale['208'] = "Download Kategorien";
+$locale['209'] = "Downloads";
+$locale['210'] = "FAQs";
+$locale['211'] = "Foren";
+$locale['212'] = "Bilder";
+$locale['213'] = "Infusionen";
+$locale['214'] = "Infusion Panels";
+$locale['215'] = "Mitglieder";
+$locale['216'] = "News";
+$locale['217'] = "Panels";
+$locale['218'] = "Photo Alben";
+$locale['219'] = "PHP Info";
+$locale['220'] = "Umfragen";
+$locale['221'] = "Shoutbox";
+$locale['222'] = "Seiten Links";
+$locale['223'] = "Eingereichtes";
+$locale['224'] = "Upgrade";
+$locale['225'] = "Benutzer Gruppen";
+$locale['226'] = "Web Link Kategorien";
+$locale['227'] = "Web Links";
+$locale['228'] = "Haupteinstellungen";
+$locale['229'] = "Zeit und Datums-Einstellungen";
+$locale['230'] = "Forum Einstellungen";
+$locale['231'] = "Registrierungs Einstellungen";
+$locale['232'] = "Photo Gallerie Einstellungen";
+$locale['233'] = "Sonstige Einstellungen";
+$locale['234'] = "Optionen zu Private Nachrichten";
+// Site Information
+$locale['250'] = "Information";
+$locale['251'] = "Registrierte Mitglieder:";
+$locale['252'] = "Noch nicht aktivierte mitglieder:";
+$locale['253'] = "Gesperrte mitglieder:";
+$locale['254'] = "Eigereichte News:";
+$locale['255'] = "Eingereichte Artikel:";
+$locale['256'] = "Eigereichte Links:";
+$locale['257'] = "Kommentare:";
+$locale['258'] = "Shoutbox Beiträge:";
+$locale['259'] = "Forum Beiträge:";
+?>

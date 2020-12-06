@@ -1,2 +1,2 @@
 ### PHP-Fusion v6.00.101
-Release date: 03.06.2005
+Release date: 04.06.2005

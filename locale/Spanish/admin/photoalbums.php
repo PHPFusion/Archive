@@ -1,0 +1,35 @@
+<?php
+$locale['400'] = "Álbumes de fotos actuales";
+$locale['401'] = "Eliminar Álbum";
+$locale['402'] = "Editar Álbum de fotos";
+$locale['403'] = "Añadir Álbum de fotos";
+$locale['404'] = "ID";
+$locale['405'] = "Título";
+$locale['406'] = "Ver";
+$locale['407'] = "Fotos";
+$locale['408'] = "Orden";
+$locale['409'] = "Opciones";
+$locale['410'] = "Info";
+$locale['411'] = "Foto";
+$locale['412'] = "Eliminar";
+$locale['413'] = "Entrar";
+$locale['414'] = "Guardar Álbum";
+$locale['415'] = "Cancelar";
+$locale['416'] = "orden actual:";
+$locale['417'] = "dejar en blanco para colocar en último lugar";
+$locale['418'] = "Cargando foto...";
+$locale['419'] = "La foto estará en escala %uw x %uh pixeles";
+$locale['420'] = "Error en Álbum de fotos";
+$locale['421'] = "Error";
+$locale['422'] = "El Álbum no se pudo Eliminar";
+$locale['423'] = "Hay fotos en este Álbum.";
+$locale['424'] = "El título del Álbum está ya está en uso.";
+$locale['425'] = "La foto debe ser menor de %u bytes.";
+$locale['426'] = "Fichero de fotos no válido.";
+$locale['427'] = "La foto debe estar en formato JPEG.";
+$locale['428'] = "La foto debe ser menor de %uw x %uh pixeles.";
+$locale['429'] = "Volver a la Administración del Álbum de fotos";
+$locale['430'] = "Volver al Índice de Administración";
+$locale['431'] = "No se ha definido ningún Álbum de fotos.";
+$locale['432'] = "Nada";
+?>

@@ -1,0 +1,5 @@
+<?php
+$result = dbquery("INSERT INTO ".DB_SETTINGS." (settings_name, settings_value) VALUES ('maintenance_level', '102')");
+$result = dbquery("DELETE FROM ".DB_SETTINGS." WHERE settings_name='validation_method'");
+
+?>

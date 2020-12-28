@@ -1,0 +1,5 @@
+<?php
+$result = dbquery("INSERT INTO ".DB_SETTINGS." (settings_name, settings_value) VALUES ('cronjob_day', '".time()."')");
+$result = dbquery("INSERT INTO ".DB_SETTINGS." (settings_name, settings_value) VALUES ('cronjob_hour', '".time()."')");
+
+?>

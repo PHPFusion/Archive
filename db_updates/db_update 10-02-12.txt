@@ -1,0 +1,7 @@
+<?php
+$result = dbquery("INSERT INTO ".DB_SETTINGS." (settings_name, settings_value) VALUES ('visitorcounter_enabled', '1')");
+// 604 800 seconds = 1 week
+$result = dbquery("INSERT INTO ".DB_SETTINGS." (settings_name, settings_value) VALUES ('popular_threads_timeframe', '604800')");
+$result = dbquery("ALTER TABLE ".DB_USER_FIELD_CATS." CHANGE field_cat_id field_cat_id MEDIUMINT( 8 ) UNSIGNED NOT NULL AUTO_INCREMENT");
+
+?>

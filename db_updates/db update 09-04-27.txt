@@ -1,0 +1,41 @@
+IMPORTANT DB UPDATE 2009/04/22
+
+If you're updating your v7 setup, please preview the following code in custom pages admin
+
+<?php
+$result = dbquery("ALTER TABLE ".DB_SETTINGS." ADD deactivation_response SMALLINT(3) DEFAULT '14' AFTER validation_method");
+$result = dbquery("ALTER TABLE ".DB_SETTINGS." ADD deactivation_period SMALLINT(4) DEFAULT '365' AFTER validation_method");
+$result = dbquery("ALTER TABLE ".DB_SETTINGS." ADD enable_deactivation TINYINT(1) DEFAULT '0' AFTER validation_method");
+
+$settings = dbarray(dbquery("SELECT * FROM ".DB_SETTINGS));
+
+// Create new settings table
+$result = dbquery("DROP TABLE IF EXISTS ".$db_prefix."settings2");
+$result = dbquery("CREATE TABLE ".$db_prefix."settings2 (
+settings_name VARCHAR(200) NOT NULL DEFAULT '',
+settings_value TEXT NOT NULL,
+PRIMARY KEY (settings_name)
+) ENGINE=MyISAM");
+
+// Insert settings as rows
+foreach ($settings as $key => $value) {
+	$result = dbquery("INSERT INTO ".$db_prefix."settings2 (settings_name, settings_value) VALUES ('$key', '$value')");
+}
+
+// Drop old settings table
+$result = dbquery("DROP TABLE ".DB_SETTINGS);
+
+// Rename new settings table
+$result = dbquery("RENAME TABLE ".$db_prefix."settings2 TO ".DB_SETTINGS);
+
+// Create infusions settings table
+$result = dbquery("DROP TABLE IF EXISTS ".$db_prefix."settings_inf");
+$result = dbquery("CREATE TABLE ".$db_prefix."settings_inf (
+settings_name VARCHAR(200) NOT NULL DEFAULT '',
+settings_value TEXT NOT NULL,
+settings_inf VARCHAR(200) NOT NULL DEFAULT '',
+PRIMARY KEY (settings_name)
+) ENGINE=MyISAM");
+
+
+?>

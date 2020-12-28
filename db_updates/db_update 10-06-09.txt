@@ -1,0 +1,24 @@
+<?php
+// Alter news table and add medium image field
+$result = dbquery("ALTER TABLE ".DB_NEWS." ADD news_image_t2 VARCHAR(100) NOT NULL DEFAULT '' AFTER news_image_t1");
+
+// Alter tables and add hidden fields
+$result = dbquery("ALTER TABLE ".DB_COMMENTS." ADD comment_hidden TINYINT(1) UNSIGNED NOT NULL DEFAULT '0'");
+$result = dbquery("ALTER TABLE ".DB_SHOUTBOX." ADD shout_hidden TINYINT(1) UNSIGNED NOT NULL DEFAULT '0'");
+$result = dbquery("ALTER TABLE ".DB_THREADS." ADD thread_hidden TINYINT(1) UNSIGNED NOT NULL DEFAULT '0'");
+$result = dbquery("ALTER TABLE ".DB_POSTS." ADD post_hidden TINYINT(1) UNSIGNED NOT NULL DEFAULT '0'");
+
+// Insert new settings
+$result = dbquery("INSERT INTO ".DB_SETTINGS." (settings_name, settings_value) VALUES ('news_photo_w', '400')");
+$result = dbquery("INSERT INTO ".DB_SETTINGS." (settings_name, settings_value) VALUES ('news_photo_h', '300')");
+$result = dbquery("INSERT INTO ".DB_SETTINGS." (settings_name, settings_value) VALUES ('news_image_frontpage', '0')");
+$result = dbquery("INSERT INTO ".DB_SETTINGS." (settings_name, settings_value) VALUES ('news_image_readmore', '0')");
+$result = dbquery("INSERT INTO ".DB_SETTINGS." (settings_name, settings_value) VALUES ('deactivation_action', '0')");
+
+// Update admin settings pages
+$result = dbquery("SELECT * FROM ".DB_ADMIN." WHERE admin_page='4'");
+while ($data = dbarray($result)) {
+	$newname = str_replace(" Settings", "", $data['admin_title']);
+	$result2 = dbquery("UPDATE ".DB_ADMIN." SET admin_title='".$newname."' WHERE admin_id='".$data['admin_id']."'");
+}
+?>

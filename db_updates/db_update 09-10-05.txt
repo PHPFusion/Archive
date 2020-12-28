@@ -1,0 +1,10 @@
+<?php
+$result = dbquery("SELECT user_id, user_rights FROM ".$db_prefix."users WHERE user_level='103'");
+while ($data = dbarray($result)) {
+	$result2 = dbquery("UPDATE ".$db_prefix."users SET user_rights='".$data['user_rights'].".S12' WHERE user_id='".$data['user_id']."'");
+}
+
+$result = dbquery("INSERT INTO ".$db_prefix."admin (admin_rights, admin_image, admin_title, admin_link, admin_page) VALUES ('S12', 'security.gif', 'Security', 'settings_security.php', '4')");
+
+$result = dbquery("INSERT INTO ".DB_SETTINGS." (settings_name, settings_value) VALUES ('flood_autoban', '1')");
+?>

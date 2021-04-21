@@ -1,2 +1,2 @@
-8.00.70
-https://www.php-fusion.co.uk/infusions/downloads/downloads.php?file_id=613
+8.00.80
+https://www.php-fusion.co.uk/infusions/downloads/downloads.php?file_id=617

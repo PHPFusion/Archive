@@ -1,5 +1,4 @@
-# PHPFusion Archive
-This repository contains all officially released versions of PHPFusion.
-Each version has its own branch with a README file. The release date in README file is in the format dd.mm.YYYY.
+### PHPFusion v8.00.80
+Release date: 21.04.2021
 
-We do not provide support for these archived releases.
+News: https://www.phpfusion.com/infusions/news/news.php?readmore=662

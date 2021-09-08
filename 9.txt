@@ -1,2 +1,2 @@
-9.03.110
-https://www.php-fusion.co.uk/infusions/downloads/downloads.php?file_id=616
+9.10.00
+https://www.php-fusion.co.uk/infusions/downloads/downloads.php?file_id=619
